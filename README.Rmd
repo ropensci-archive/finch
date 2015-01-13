@@ -1,0 +1,38 @@
+docplyr
+=======
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE, 
+  message = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+`docplyr` is an R client for Simplified document database manipulation and analysis.
+
+## Installation
+
+```{r eval=FALSE}
+# install.packages("devtools")
+devtools::install_github("sckott/docplyr")
+```
+
+```{r}
+library("docplyr")
+```
+
+## Setup connection to database
+
+Elasticsearch
+
+```{r}
+src_elastic()
+```
+
+CouchDB
+
+```{r}
+src_couchdb()
+```
