@@ -7,7 +7,7 @@
 gbif_validate(object)
 }
 \arguments{
-\item{object}{Either a url or a file, xxxx}
+\item{object}{Either a url or a file}
 }
 \description{
 Validate a Darwin Core Archive using GBIF's validator
