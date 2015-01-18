@@ -15,3 +15,7 @@ pluck <- function(x, name, type) {
     vapply(x, "[[", name, FUN.VALUE = type)
   }
 }
+
+# validate_schema <- function(x){
+#   XML::xmlSchemaValidate(xml, )
+# }

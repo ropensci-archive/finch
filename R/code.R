@@ -2,26 +2,23 @@
 #'
 #' @param xxx asdfadf
 #' @examples \dontrun{
-#'
+#' file <- system.file("examples", "example_simple.xml", package = "finch")
+#' beak(file)
+#' file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
+#' beak(file)
 #' }
 
-foo <- function(x){
-  print(x)
+beak <- function(file){
+  if( !file.exists(file) ) stop("That file does not exist", call. = FALSE)
+  xml <- xmlParse(file)
+  dc <- xpathSApply(xml, "//dc:*")
+  dc <- lapply(dc, function(x){
+    as.list(setNames(xmlValue(x), xmlName(x)))
+  })
+  dwc <- xpathSApply(xml, "//dwc:*")
+  dwc <- lapply(dwc, function(x){
+    as.list(setNames(xmlValue(x), xmlName(x)))
+  })
+  meta <- sapply(xmlNamespaces(xml), function(x) unname(as.list(setNames(x$uri, x$id))))
+  structure(list(meta = meta, dc = dc, dwc = dwc), class="darwincore")
 }
-
-library("EML")
-
-# read data
-library("data.table")
-library("dplyr")
-eml_read("~/Downloads/0009933-141123120432318/dataset/38b4c89f-584c-41bb-bd8f-cd1def33e92f.xml")
-dat <- fread("~/Downloads/0009933-141123120432318/occurrence.txt")
-dat %>% tbl_df
-
-# parse darwin core files
-library("XML")
-xml <- xmlParse("inst/examples/example_simple.xml")
-xpathSApply(xml, "\\SimpleDarwinRecord")
-#
-
-XML::xmlSchemaValidate(xml, )
