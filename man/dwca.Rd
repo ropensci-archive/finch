@@ -4,14 +4,14 @@
 \alias{dwca}
 \title{Parse Darwin Core Archive}
 \usage{
-dwca(x, read = FALSE, ...)
+dwca(input, read = FALSE, ...)
 }
 \arguments{
+\item{input}{Path to local zip file, directory, or a url.}
+
 \item{read}{(logical)}
 
 \item{...}{Further args passed on to \code{\link[data.table]{fread}}}
-
-\item{input}{Path to local zip file, directory, or a url.}
 }
 \description{
 Parse Darwin Core Archive
@@ -44,14 +44,14 @@ dwca("~/Downloads/0000143-150116162929234/", TRUE)
 dwca("~/Downloads/0000154-150116162929234/", TRUE)
 
 # Can pass in a zip file
-out <- dwca(x="~/Downloads/0000154-150116162929234.zip")
+out <- dwca("~/Downloads/0000154-150116162929234.zip")
 
 # Can pass in zip file as a url
 x <- "http://ecat-dev.gbif.org/repository/vernaculars/vernacular_registry_dwca_3.zip"
 out <- dwca(x)
 
 # This one fails on file read
-out <- dwca(x="~/Downloads/0000153-150116162929234/", TRUE)
+out <- dwca("~/Downloads/0000153-150116162929234/", TRUE)
 }
 }
 
