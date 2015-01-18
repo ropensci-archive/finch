@@ -2,7 +2,7 @@ Package: finch
 Title: Parse and create Darwin Core Archive files
 Description: Parse and create Darwin Core Archive files
 Version: 0.0.1.99
-Date: 2015-01-13
+Date: 2015-01-18
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com")
 License: MIT + file LICENSE
