@@ -1,6 +1,9 @@
-#' Stuff
+#' Parse a darwin core file
 #'
-#' @param xxx asdfadf
+#' @export
+#' @import XML
+#'
+#' @param file A darwin core file
 #' @examples \dontrun{
 #' file <- system.file("examples", "example_simple.xml", package = "finch")
 #' beak(file)

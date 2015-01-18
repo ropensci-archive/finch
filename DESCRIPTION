@@ -11,6 +11,8 @@ URL: https://github.com/sckott/finch
 BugReports: https://github.com/sckott/finch/issues
 Roxygen: list(wrap = FALSE)
 Imports:
-    XML
+    XML,
+    EML,
+    data.table
 Suggests:
     roxygen2

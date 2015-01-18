@@ -43,8 +43,12 @@ out
 dwca("~/Downloads/0000143-150116162929234/", TRUE)
 dwca("~/Downloads/0000154-150116162929234/", TRUE)
 
-# Can pass in a zip file instead
-out <- dwca("~/Downloads/0000154-150116162929234.zip")
+# Can pass in a zip file
+out <- dwca(x="~/Downloads/0000154-150116162929234.zip")
+
+# Can pass in zip file as a url
+x <- "http://ecat-dev.gbif.org/repository/vernaculars/vernacular_registry_dwca_3.zip"
+out <- dwca(x)
 
 # This one fails on file read
 out <- dwca(x="~/Downloads/0000153-150116162929234/", TRUE)

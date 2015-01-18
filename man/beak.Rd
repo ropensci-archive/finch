@@ -2,15 +2,15 @@
 % Please edit documentation in R/code.R
 \name{beak}
 \alias{beak}
-\title{Stuff}
+\title{Parse a darwin core file}
 \usage{
 beak(file)
 }
 \arguments{
-\item{xxx}{asdfadf}
+\item{file}{A darwin core file}
 }
 \description{
-Stuff
+Parse a darwin core file
 }
 \examples{
 \dontrun{

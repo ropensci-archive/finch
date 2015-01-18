@@ -1,13 +1,3 @@
-#' Pipe operator
-#'
-#' @name %>%
-#' @rdname pipe
-#' @keywords internal
-#' @export
-#' @importFrom magrittr %>%
-#' @usage lhs \%>\% rhs
-NULL
-
 pluck <- function(x, name, type) {
   if (missing(type)) {
     lapply(x, "[[", name)
