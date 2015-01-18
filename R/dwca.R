@@ -70,6 +70,7 @@ try_eml <- function(x){
     EML::eml_read(y)
 }
 
+#' @export
 print.dwca_gbif <- function(x){
   cat("<gbif dwca>", sep = "\n")
   cat(paste0("  Package ID: ", x$highmeta@packageId), sep = "\n")
@@ -102,7 +103,7 @@ read_data <- function(x, read){
   if( read ){
     datout <- list()
     for(i in seq_along(x)){
-      datout[[basename(x[[i]])]] <- fread(x[[i]], stringsAsFactors = FALSE, data.table = FALSE)
+      datout[[basename(x[[i]])]] <- suppressWarnings(fread(x[[i]], stringsAsFactors = FALSE, data.table = FALSE))
     }
     datout
   } else {
