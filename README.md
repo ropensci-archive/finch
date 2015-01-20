@@ -3,7 +3,7 @@ finch
 
 
 
-`finch` parses darwin core archives
+`finch` parses Darwin Core simple and archive files
  
 ## Install
 
@@ -15,7 +15,7 @@ install.packages("devtools")
 devtools::install_github("ropensci/EML", build=FALSE, dependencies=c("DEPENDS", "IMPORTS"))
 ```
 
-Then install `finch`
+Then install and load `finch`
 
 
 ```r
@@ -66,7 +66,7 @@ To parse a simple darwin core file like
 </SimpleDarwinRecordSet>
 ```
 
-This file is in this package as an example file, get the file, then `beak()`
+This file is in this package as an example file, get the file, then `simple()`
 
 
 ```r
