@@ -33,6 +33,11 @@
 #'
 #' # Can pass in a zip file
 #' out <- dwca("~/Downloads/0000154-150116162929234.zip")
+#' out <- dwca("~/Downloads/DwCArchive_Cicadellinae.zip")
+#' out$files
+#' out$highmeta
+#' out$emlmeta
+#' out$dataset_meta
 #'
 #' # Can pass in zip file as a url
 #' x <- "http://ecat-dev.gbif.org/repository/vernaculars/vernacular_registry_dwca_3.zip"
@@ -48,32 +53,56 @@ dwca <- function(input, read=FALSE, ...){
   x <- process(x)
   # get file names and paths
   files <- parse_dwca(x)
+  # high level metadata - meta.xml file
+  highmeta <- try_meta(files$xml_files)
+  # high level metadata - eml.xml or other named eml file
+  emlmeta <- try_eml(files$xml_files)
   # get datasets metadata
   dataset_meta <- lapply(files$datasets_meta, EML::eml_read)
-  # high level metadata
-  highmeta <- try_eml(files$xml_files)
-  # highmeta <- EML::eml_read(grep("metadata.xml", files$xml_files, value = TRUE))
   # get data
   datout <- read_data(files$data_paths, read)
 
   structure(list(files=files,
                  highmeta = highmeta,
-                 dataset_meta=dataset_meta,
+                 emlmeta = emlmeta,
+                 dataset_meta = dataset_meta,
                  data = datout), class="dwca_gbif", read=read)
 }
 
-try_eml <- function(x){
-  y <- grep("metadata.xml", x, value = TRUE)
-  if( length(y) == 0 )
-    NULL
-  else
-    EML::eml_read(y)
+try_meta <- function(x) {
+  tmp <- xmlParse(grep("meta.xml", x, value = TRUE))
+  childs <- xmlChildren(xmlChildren(tmp)$archive)
+  out <- list()
+  for(i in seq_along(childs)){
+    res <- xmlChildren(childs[[i]])
+    loc <- xmlValue(res$files)
+    dat <- unname(lapply(res[ names(res) == "field" ], function(x) data.frame(as.list(xmlAttrs(x)))))
+    out[[loc]] <- do.call("rbind.fill", dat)
+  }
+  out
 }
+
+is_eml <- function(x) any( grepl("eml:eml", readLines(x, n = 5)) )
+
+get_eml <- function(x){
+  tmp <- xmlParse(grep("meta.xml", x, value = TRUE))
+  ff <- xmlToList(xmlChildren(tmp)$archive)$.attrs[["metadata"]]
+  grep(ff, x, value = TRUE)
+}
+
+try_eml <- function(x) EML::eml_read(get_eml(x))
+# {
+#   y <- sapply(x, is_eml)
+#   if( any(y) )
+#     EML::eml_read(x[y])
+#   else
+#     NULL
+# }
 
 #' @export
 print.dwca_gbif <- function(x, ...){
   cat("<gbif dwca>", sep = "\n")
-  cat(paste0("  Package ID: ", x$highmeta@packageId), sep = "\n")
+  cat(paste0("  Package ID: ", cmeta(x)), sep = "\n")
   cat(paste0("  No. data sources: ", length(x$dataset_meta)), sep = "\n")
   cat(paste0("  No. datasets: ", length(x$data)), sep = "\n")
   for(i in seq_along(x$data)){
@@ -82,6 +111,13 @@ print.dwca_gbif <- function(x, ...){
     else
       cat(sprintf("  Dataset %s: %s", names(x$data[i]), x$data[[i]]), sep = "\n")
   }
+}
+
+cmeta <- function(y){
+  if( !is.null(y$highmeta) )
+    x$highmeta@packageId
+  else
+    NULL
 }
 
 parse_dwca <- function(x){
@@ -103,12 +139,24 @@ read_data <- function(x, read){
   if( read ){
     datout <- list()
     for(i in seq_along(x)){
-      datout[[basename(x[[i]])]] <- suppressWarnings(fread(x[[i]], stringsAsFactors = FALSE, data.table = FALSE))
+      datout[[basename(x[[i]])]] <- try_read(x[[i]])
     }
     datout
   } else {
     x
   }
+}
+
+try_read <- function(z){
+  res <- tryCatch(
+    suppressWarnings(
+      fread(z, stringsAsFactors = FALSE, data.table = FALSE)
+    ), error = function(e) e
+  )
+  if( is(res, "simpleError") )
+    data.frame(NULL, stringsAsFactors = FALSE)
+  else
+    res
 }
 
 process <- function(x){

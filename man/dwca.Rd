@@ -45,6 +45,11 @@ dwca("~/Downloads/0000154-150116162929234/", TRUE)
 
 # Can pass in a zip file
 out <- dwca("~/Downloads/0000154-150116162929234.zip")
+out <- dwca("~/Downloads/DwCArchive_Cicadellinae.zip")
+out$files
+out$highmeta
+out$emlmeta
+out$dataset_meta
 
 # Can pass in zip file as a url
 x <- "http://ecat-dev.gbif.org/repository/vernaculars/vernacular_registry_dwca_3.zip"

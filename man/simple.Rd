@@ -18,6 +18,8 @@ file <- system.file("examples", "example_simple.xml", package = "finch")
 simple(file)
 file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
 simple(file)
+file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
+simple(file)
 }
 }
 
