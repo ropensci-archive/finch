@@ -5,7 +5,7 @@ Description: Parse and create Darwin Core Simple and Archive files. Functionalit
     the datasets and metadata. In addition, simple Darwin Core files can be read
     and parsed. Last, validation of Darwin Core files can be done (not yet though)
 Version: 0.0.1.99
-Date: 2015-01-19
+Date: 2015-01-20
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com")
 License: MIT + file LICENSE
@@ -19,4 +19,5 @@ Imports:
     data.table,
     plyr
 Suggests:
-    roxygen2
+    roxygen2,
+    testthat
