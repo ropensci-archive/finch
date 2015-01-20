@@ -71,7 +71,7 @@ try_eml <- function(x){
 }
 
 #' @export
-print.dwca_gbif <- function(x){
+print.dwca_gbif <- function(x, ...){
   cat("<gbif dwca>", sep = "\n")
   cat(paste0("  Package ID: ", x$highmeta@packageId), sep = "\n")
   cat(paste0("  No. data sources: ", length(x$dataset_meta)), sep = "\n")

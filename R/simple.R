@@ -27,7 +27,7 @@ simple <- function(file){
 }
 
 #' @export
-print.dwc_simple <- function(x){
+print.dwc_simple <- function(x, ...){
   cat("<dwc simple>", sep = "\n")
   cat("  meta", sep = "\n")
   for(i in seq_along(x$meta)){
