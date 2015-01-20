@@ -74,10 +74,14 @@ This file is in this package as an example file, get the file, then `beak()`
 
 ```{r}
 file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
-out <- beak(file)
-out$dc
+out <- simple(file)
 ```
 
+Index to `meta`, `dc` or `dwc`
+
+```{r}
+out$dc
+```
 
 ## Parse Darwin Core Archive
 
@@ -99,13 +103,20 @@ out$files
 High level metadata for the whole archive
 
 ```{r}
-out$highmeta
+out$emlmeta
+```
+
+High level metadata for each data file, there's many files, but we'll just look at one
+
+```{r}
+hm <- out$highmeta
+head( hm$occurrence.txt )
 ```
 
 You can get the same metadata as above for each dataset that went into the tabular dataset downloaded
 
 ```{r eval=FALSE}
-out$dataset_meta
+out$dataset_meta[[1]]
 ```
 
 View one of the datasets, brief overview.
@@ -113,6 +124,5 @@ View one of the datasets, brief overview.
 ```{r}
 head( out$data[[1]][,c(1:5)] )
 ```
-
 
 You can also give `dwca()` a local directory, or url that contains a Darwin Core Archive. 

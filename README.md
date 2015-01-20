@@ -71,7 +71,13 @@ This file is in this package as an example file, get the file, then `beak()`
 
 ```r
 file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
-out <- beak(file)
+out <- simple(file)
+```
+
+Index to `meta`, `dc` or `dwc`
+
+
+```r
 out$dc
 #> [[1]]
 #> [[1]]$type
@@ -87,7 +93,6 @@ out$dc
 #> [[3]]$language
 #> [1] "en"
 ```
-
 
 ## Parse Darwin Core Archive
 
@@ -151,7 +156,7 @@ High level metadata for the whole archive
 
 
 ```r
-out$highmeta
+out$emlmeta
 #> dataset:
 #>   title: GBIF Occurrence Download 0000154-150116162929234
 #>   creator:
@@ -330,11 +335,26 @@ out$highmeta
 #> - system
 ```
 
+High level metadata for each data file, there's many files, but we'll just look at one
+
+
+```r
+hm <- out$highmeta
+head( hm$occurrence.txt )
+#>   index                                        term delimitedBy
+#> 1     0         http://rs.gbif.org/terms/1.0/gbifID        <NA>
+#> 2     1           http://purl.org/dc/terms/abstract        <NA>
+#> 3     2       http://purl.org/dc/terms/accessRights        <NA>
+#> 4     3      http://purl.org/dc/terms/accrualMethod        <NA>
+#> 5     4 http://purl.org/dc/terms/accrualPeriodicity        <NA>
+#> 6     5      http://purl.org/dc/terms/accrualPolicy        <NA>
+```
+
 You can get the same metadata as above for each dataset that went into the tabular dataset downloaded
 
 
 ```r
-out$dataset_meta
+out$dataset_meta[[1]]
 ```
 
 View one of the datasets, brief overview.
@@ -350,6 +370,5 @@ head( out$data[[1]][,c(1:5)] )
 #> 5 239703833       NA                         NA                 NA
 #> 6 477550692       NA                         NA                 NA
 ```
-
 
 You can also give `dwca()` a local directory, or url that contains a Darwin Core Archive. 

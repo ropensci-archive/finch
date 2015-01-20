@@ -2,6 +2,7 @@
 #'
 #' @export
 #' @import EML data.table
+#' @importFrom plyr rbind.fill
 #'
 #' @param input Path to local zip file, directory, or a url.
 #' @param read (logical)
@@ -114,8 +115,8 @@ print.dwca_gbif <- function(x, ...){
 }
 
 cmeta <- function(y){
-  if( !is.null(y$highmeta) )
-    y$highmeta@packageId
+  if( !is.null(y$emlmeta) )
+    y$emlmeta@packageId
   else
     NULL
 }

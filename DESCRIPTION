@@ -13,6 +13,7 @@ Roxygen: list(wrap = FALSE)
 Imports:
     XML,
     EML,
-    data.table
+    data.table,
+    plyr
 Suggests:
     roxygen2
