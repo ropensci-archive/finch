@@ -115,7 +115,7 @@ print.dwca_gbif <- function(x, ...){
 
 cmeta <- function(y){
   if( !is.null(y$highmeta) )
-    x$highmeta@packageId
+    y$highmeta@packageId
   else
     NULL
 }
