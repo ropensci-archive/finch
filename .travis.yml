@@ -5,8 +5,8 @@ script: "./travis-tool.sh run_tests"
 before_script:
 - curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
 - chmod 755 ./travis-tool.sh
-- "./travis-tool.sh install_github ropensci/EML"
 - "./travis-tool.sh bootstrap"
+- "./travis-tool.sh install_github ropensci/EML"
 - "./travis-tool.sh install_deps"
 
 notifications:
