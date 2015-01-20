@@ -3,6 +3,8 @@ finch
 
 
 
+[![Build Status](https://api.travis-ci.org/ropensci/finch.png)](https://travis-ci.org/ropensci/finch)
+
 `finch` parses Darwin Core simple and archive files
  
 ## Install
