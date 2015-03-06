@@ -1,0 +1,104 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="96ca66b4-f762-11e1-a439-00145eb45e9a" system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+    <alternateIdentifier system="GBIF_PORTAL">8439</alternateIdentifier>
+  <title>AMNH Mammal Collections</title>
+<creator>
+    <individualName>
+<givenName>Tom</givenName>      <surName>Trombone</surName>
+    </individualName>
+<organizationName>American Museum of Natural History</organizationName><positionName>Data Manager</positionName>    <address>
+<deliveryPoint>Central Park West at 79th Street</deliveryPoint><city>New York</city><administrativeArea>NY</administrativeArea><postalCode>10024</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 212-313-7783</phone><electronicMailAddress>trombone@amnh.org</electronicMailAddress></creator>
+<metadataProvider>
+    <individualName>
+<givenName>Tom</givenName>      <surName>Trombone</surName>
+    </individualName>
+<organizationName>American Museum of Natural History</organizationName><positionName>Data Manager</positionName>    <address>
+<deliveryPoint>Central Park West at 79th Street</deliveryPoint><city>New York</city><administrativeArea>NY</administrativeArea><postalCode>10024</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 212-313-7783</phone><electronicMailAddress>trombone@amnh.org</electronicMailAddress></metadataProvider>
+<associatedParty>
+    <individualName>
+<givenName>John</givenName>      <surName>Wieczorek</surName>
+    </individualName>
+<organizationName>Museum of Vertebrate Zoology at UC Berkeley</organizationName><positionName>Information Architect</positionName><electronicMailAddress>tuco@berkeley.edu</electronicMailAddress>    <role>PROGRAMMER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>David</givenName>      <surName>Bloom</surName>
+    </individualName>
+<organizationName>VertNet</organizationName><positionName>VertNet Coordinator</positionName><electronicMailAddress>dbloom@vertnet.org</electronicMailAddress>    <role>PROGRAMMER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Laura</givenName>      <surName>Russell</surName>
+    </individualName>
+<organizationName>VertNet</organizationName><positionName>VertNet Programmer</positionName><electronicMailAddress>larussell@vertnet.org</electronicMailAddress>    <role>PROGRAMMER</role>
+</associatedParty>
+<pubDate>
+        2013-10-30
+</pubDate>
+<language>ENGLISH</language>
+<abstract>
+  <para>Founded in 1869, the AMNH mammal collections are among the oldest in the museum. Today, the Department of Mammalogy houses over 275,000 specimens, making it the third largest collection of recent mammals in the world. The scientific mission of the Department of Mammalogy is to describe the diversity of living and recently extinct mammals and to explore the mechanisms responsible for their evolution and extinction. In fulfillment of this objective, the department collects, archives and studies specimens of recent mammals and the data associated with those specimens. We aim always to provide the highest standards of curatorial care and to promote access to the collections by other scholars. The collections are visited by an average of 130 researchers every year, and the Department loans over 500 specimens a year to researchers around the globe.
+The Recent Mammals Collection, together with the remarkable collection of books, journals, and manuscripts of the Department Library and Archives provides scholars with outstanding resources for research in mammalian systematics, biodiversity and evolutionary biology.</para>
+</abstract>
+  <keywordSet>
+      <keyword>Occurrence</keyword>
+      <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+  </keywordSet>
+  <keywordSet>
+      <keyword>Specimen</keyword>
+      <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+  </keywordSet>
+  <intellectualRights>
+    <para>The terms and conditions of use of AMNH data are given in the document found at http://research.amnh.org/vertzoo/TandC.pdf.</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">http://www.amnh.org/our-research/vertebrate-zoology/mammalogy</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>The scope of the collections is worldwide, with areas of particular strength including Australia and New Guinea (30,000 specimens), Central Asia (12,000 specimens), Central Africa (30,000 specimens), and South America (50,000 specimens). Today, the Department draws on these collections to support active research programs on mammalian diversity and evolution in groups such as bats, marsupials, and rodents from a wide range of countries including the Central African Republic, French Guiana, Indonesia, Papua New Guinea, Peru, and Vietnam.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>-90</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+        <taxonomicCoverage>
+            <generalTaxonomicCoverage>Taxonomic coverage is particularly broad (100% of the 26 mammalian orders; 96% of the 136 families; about 50% of the 1,135 genera and about 60% of the 4,629 species), and the collection contains over 1,200 name-bearing type specimens. The collections of marsupials, insectivores, bats, primates, rodents, carnivores, whales and ungulates are recognized as being among the best in the world.</generalTaxonomicCoverage>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Mammalia</taxonRankValue>
+                <commonName>mammals</commonName>
+            </taxonomicClassification>
+        </taxonomicCoverage>
+  </coverage>
+  <contact>
+    <individualName>
+<givenName>Tom</givenName>      <surName>Trombone</surName>
+    </individualName>
+<organizationName>American Museum of Natural History</organizationName><positionName>Data Manager</positionName>    <address>
+<deliveryPoint>Central Park West at 79th Street</deliveryPoint><city>New York</city><administrativeArea>NY</administrativeArea><postalCode>10024</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 212-313-7783</phone><electronicMailAddress>trombone@amnh.org</electronicMailAddress>  </contact>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+        <dateStamp>2013-12-13T04:45:25.089+01:00</dateStamp>
+        <citation>AMNH Mammal Collection</citation>
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>

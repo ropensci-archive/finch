@@ -1,0 +1,424 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="5df38344-b821-49c2-8174-cf0f29f4df0d" system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+  <title>NMNH occurrence DwC-A</title>
+<creator>
+    <individualName>
+<givenName>Thomas</givenName>      <surName>Orrell</surName>
+    </individualName>
+<organizationName>National Museum of National History, Smithsonian Institution</organizationName><positionName>Branch Chief, NMNH Informatics</positionName>    <address>
+<deliveryPoint>12th St. and Constitution Ave. NW, MRC 136</deliveryPoint><city>Washington</city><administrativeArea>DC</administrativeArea><postalCode>20013-7012</postalCode><country>UNITED_STATES</country>    </address>
+<phone>202-633-2151</phone><electronicMailAddress>orrellt@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu</onlineUrl></creator>
+<metadataProvider>
+    <individualName>
+<givenName>Tom</givenName>      <surName>Hollowell</surName>
+    </individualName>
+<organizationName>Informatics Branch, NMNH</organizationName><positionName>Information Technology Specialist</positionName>    <address>
+<deliveryPoint>12th St. and Constitution Ave. NW, MRC 136</deliveryPoint><city>Washington</city><administrativeArea>DC</administrativeArea><postalCode>20013-7012</postalCode><country>UNITED_STATES</country>    </address>
+<phone>202-633-0849</phone><electronicMailAddress>hollowellt@si.edu</electronicMailAddress><onlineUrl>http://collections.nmnh.si.edu/ipt/</onlineUrl></metadataProvider>
+<associatedParty>
+    <individualName>
+<givenName>Cheryl</givenName>      <surName>Bright</surName>
+    </individualName>
+<organizationName>Department of Invertebrate Zoology, NMNH, Smithsonian Institution</organizationName><positionName>Collection Manager</positionName>    <address>
+<deliveryPoint>Museum Support Center, MRC 534, 4210 Silver Hill Road</deliveryPoint><city>Suitland</city><administrativeArea>MD</administrativeArea><postalCode>20746</postalCode><country>UNITED_STATES</country>    </address>
+<phone>301-238-1756</phone><electronicMailAddress>brightc@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu/search/iz/</onlineUrl>    <role>CUSTODIAN_STEWARD</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Craig</givenName>      <surName>Ludwig</surName>
+    </individualName>
+<organizationName>Division of Mammals, NMNH, Smithsonian Institution</organizationName><positionName>Scientific Data Manager</positionName>    <address>
+<deliveryPoint>12th St. and Constitution Ave. NW, MRC 108</deliveryPoint><city>Washington</city><administrativeArea>DC</administrativeArea><postalCode>20013-7012</postalCode><country>UNITED_STATES</country>    </address>
+<phone>202-633-1255</phone><electronicMailAddress>ludwigc@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu/search/mammals/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Brian</givenName>      <surName>Schmidt</surName>
+    </individualName>
+<organizationName>Division of Birds, NMNH, Smithsonian Institution</organizationName><positionName>Museum Specialist</positionName>    <address>
+<deliveryPoint>12th St. and Constitution Ave. NW, MRC 116</deliveryPoint><city>Washington</city><administrativeArea>DC</administrativeArea><postalCode>20013-7012</postalCode><country>UNITED_STATES</country>    </address>
+<phone>202-633-0796</phone><electronicMailAddress>schmidtb@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu/search/birds/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Kennth</givenName>      <surName>Tighe</surName>
+    </individualName>
+<organizationName>Division of Amphibians and Reptiles, NMNH, Smithsonian Institution</organizationName><positionName>Database Coordinator</positionName>    <address>
+<deliveryPoint>Museum Support Center, MRC 534, 4210 Silver Hill Road</deliveryPoint><city>Suitland</city><administrativeArea>MD</administrativeArea><postalCode>20746</postalCode><country>UNITED_STATES</country>    </address>
+<phone>301-238-1726</phone><electronicMailAddress>tighek@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu/search/herps/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Jeff</givenName>      <surName>Williams</surName>
+    </individualName>
+<organizationName>Division of Fishes, NMNH, Smithsonian Institution</organizationName><positionName>Collection Manager</positionName>    <address>
+<deliveryPoint>Museum Support Center, MRC 534, 4210 Silver Hill Road</deliveryPoint><city>Suitland</city><administrativeArea>MD</administrativeArea><postalCode>20746</postalCode><country>UNITED_STATES</country>    </address>
+<phone>301-238-1736</phone><electronicMailAddress>williamsjt@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu/search/fishes/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Patricia</givenName>      <surName>Gentili-Poole</surName>
+    </individualName>
+<organizationName>Department of Entomology, NMNH, Smithsonian Institution</organizationName><positionName>Collections Information Manager</positionName>    <address>
+<deliveryPoint>12th St. and Constitution Ave. NW, MRC 165</deliveryPoint><city>Washington</city><administrativeArea>DC</administrativeArea><postalCode>20013-7012</postalCode><country>UNITED_STATES</country>    </address>
+<phone>202-633-1046</phone><electronicMailAddress>gentilip@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu/search/ento/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Linda</givenName>      <surName>Ward</surName>
+    </individualName>
+<organizationName>Department of Invertebrate Zoology, NMNH, Smithsonian Institution</organizationName><positionName>Data Manager</positionName>    <address>
+<deliveryPoint>Museum Support Center, MRC 534, 4210 Silver Hill Road</deliveryPoint><city>Suitland</city><administrativeArea>MD</administrativeArea><postalCode>20746</postalCode><country>UNITED_STATES</country>    </address>
+<phone>301-238-1765</phone><electronicMailAddress>wardl@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu/search/iz/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Chris</givenName>      <surName>Tuccinardi</surName>
+    </individualName>
+<organizationName>Department of Botany, NMNH, Smithsonian Institution</organizationName><positionName>Information Management</positionName>    <address>
+<deliveryPoint>12th St. and Constitution Ave. NW, MRC 166</deliveryPoint><city>Washington</city><administrativeArea>DC</administrativeArea><postalCode>20013-7012</postalCode><country>UNITED_STATES</country>    </address>
+<phone>202-633-0900</phone><electronicMailAddress>tuccinar@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu/search/botany/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<pubDate>
+        2015-01-08
+</pubDate>
+<language>ENGLISH</language>
+<abstract>
+  <para>More than 6 Million public records of specimens accessioned at the National Museum of Natural History, Smithsonian Institution, Departments of Botany, Entomology, Invertebrate Zoology, Vertebrate Zoology (Amphibians &amp; Reptiles, Birds, Fishes, Mammals), Paleobiology, Mineral Sciences, and Anthropology. These include more than 290,000 Primary Type specimen records.</para>
+</abstract>
+  <keywordSet>
+      <keyword>Occurrence</keyword>
+      <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+  </keywordSet>
+  <keywordSet>
+      <keyword>Specimen</keyword>
+      <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+  </keywordSet>
+  <additionalInfo>
+    <para>While every effort is made to provide accurate information, use of these databases is entirely at your own risk. The National Museum of Natural History makes no warranty, either express or implied, regarding the completeness, accuracy, or currency of the information in the databases or its suitability for any particular purpose. Where the use of this data is critical to scientific investigation, scholarly publication, or policy decisions, the user is responsible for verifying identities and provenance against specimens and other primary data sources.</para>
+  </additionalInfo>
+  <intellectualRights>
+    <para>NMNH public data constitute a compilation of data, all rights to which, including copyright, are owned by the Smithsonian Institution. Except as otherwise expressly stated at http://www.mnh.si.edu/rc/db/2data_access_policy.html, the information, records, or images in these databases may not be reproduced, distributed, or publicly displayed, in whole or in part, without the express written permission of the National Museum of Natural History, Smithsonian Institution.</para>
+  </intellectualRights>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>Global collections, National Museum of Natural History (USNM), Smithsonian Institution</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>-90</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+      </temporalCoverage>
+        <taxonomicCoverage>
+            <taxonomicClassification>
+                <taxonRankName>Kingdom</taxonRankName>
+              <taxonRankValue>Animalia</taxonRankValue>
+                <commonName>Animals</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Annelida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Arthropoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Brachiopoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Bryozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Chaetognatha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Cnidaria</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Ctenophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Echinodermata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Echiura</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Entoprocta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Gastrotricha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Hemichordata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Kinorhyncha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Metazoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Mollusca</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Nematoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Nematomorpha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Nemertea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Phoronida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Platyhelminthes</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Pogonophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Porifera</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Priapulida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Rotifera</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Sipuncula</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Tardigrada</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Vestimentifera</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Onychophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Subphylum</taxonRankName>
+              <taxonRankValue>Chelicerata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Subphylum</taxonRankName>
+              <taxonRankValue>Hexapoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Subphylum</taxonRankName>
+              <taxonRankValue>Myriapoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Kingdom</taxonRankName>
+              <taxonRankValue>Fungi</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Cyanobacteria</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Kingdom</taxonRankName>
+              <taxonRankValue>Protosta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Charophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Chlorophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Chrysophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Cryptophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Dinoflagellata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Euglenophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Phaeophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Pyrrophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Rhodophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Kingdom</taxonRankName>
+              <taxonRankValue>Plantae</taxonRankValue>
+                <commonName>Plants</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Bryophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Hepatophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Magnoliophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Gnetophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Cycadophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Pinophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Lycophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Anthocerotophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Marchantiophyta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Pteridophyta</taxonRankValue>
+                <commonName>Ferns</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Subphylum</taxonRankName>
+              <taxonRankValue>Vertbrata</taxonRankValue>
+                <commonName>Vertebrates</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Chordata</taxonRankValue>
+                <commonName>Chordates</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Actinopterygii</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Chondrichthyes</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Superclass</taxonRankName>
+              <taxonRankValue>Agnatha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Sarcopterygii</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Superclass</taxonRankName>
+              <taxonRankValue>Osteichthyes</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Amphibia</taxonRankValue>
+                <commonName>Amphibians</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Reptilia</taxonRankValue>
+                <commonName>Reptiles</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Aves</taxonRankValue>
+                <commonName>Birds</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Mammalia</taxonRankValue>
+                <commonName>Mammals</commonName>
+            </taxonomicClassification>
+        </taxonomicCoverage>
+  </coverage>
+  <contact>
+    <individualName>
+<givenName>Thomas</givenName>      <surName>Orrell</surName>
+    </individualName>
+<organizationName>National Museum of National History, Smithsonian Institution</organizationName><positionName>Branch Chief, NMNH Informatics</positionName>    <address>
+<deliveryPoint>12th St. and Constitution Ave. NW, MRC 136</deliveryPoint><city>Washington</city><administrativeArea>DC</administrativeArea><postalCode>20013-7012</postalCode><country>UNITED_STATES</country>    </address>
+<phone>202-633-2151</phone><electronicMailAddress>orrellt@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu</onlineUrl>  </contact>
+  <methods>
+      <methodStep>
+        <description>
+          <para></para>
+        </description>
+      </methodStep>
+  </methods>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+        <dateStamp>2015-01-08T03:48:47.726+01:00</dateStamp>
+        <citation>National Museum of Natural History, Smithsonian Institution: NMNH occurrence DwC-A</citation>
+        <resourceLogoUrl>http://logo.si.edu/files/Logos/330000f3xccl0.gif</resourceLogoUrl>
+        <formationPeriod>19th Century to Present</formationPeriod>
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>

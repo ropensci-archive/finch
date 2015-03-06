@@ -1,0 +1,97 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="cd875b5a-b3fe-48f2-94c7-371cab1431f3" system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+  <title>Herpetology Collection - Royal Ontario Museum</title>
+<creator>
+    <individualName>
+<givenName>Bradley</givenName>      <surName>Millen</surName>
+    </individualName>
+<organizationName>Royal Ontario Museum</organizationName><positionName>Database Technician</positionName>    <address>
+<deliveryPoint>100 Queen&apos;s Park</deliveryPoint><city>Toronto</city><administrativeArea>Ontario</administrativeArea><postalCode>M5S 2C6</postalCode><country>CANADA</country>    </address>
+<phone>1-416-586-5899</phone><electronicMailAddress>bradm@rom.on.ca</electronicMailAddress></creator>
+<metadataProvider>
+    <individualName>
+<givenName>Amy</givenName>      <surName>Lathrop</surName>
+    </individualName>
+<organizationName>Royal Ontario Museum</organizationName><positionName>Collections Technician</positionName>    <address>
+<deliveryPoint>100 Queen&apos;s Park</deliveryPoint><city>Toronto</city><administrativeArea>Ontario</administrativeArea><postalCode>M5S 2C6</postalCode><country>CANADA</country>    </address>
+<phone>1-416-586-5899</phone><electronicMailAddress>amyl@rom.on.ca</electronicMailAddress></metadataProvider>
+<associatedParty>
+    <individualName>
+<givenName>Ross</givenName>      <surName>MacCulloch</surName>
+    </individualName>
+<organizationName>Royal Ontario Museum</organizationName><positionName>Assistant Curator - Retired</positionName>    <address>
+<deliveryPoint>100 Queen&apos;s Park</deliveryPoint><city>Toronto</city><administrativeArea>Ontario</administrativeArea><postalCode>M5S 2C6</postalCode><country>CANADA</country>    </address>
+<phone>1-416-586-5899</phone><electronicMailAddress>rossm@rom.on.ca</electronicMailAddress><onlineUrl>http://www.rom.on.ca/en/collections-research/rom-staff/ross-macculloch</onlineUrl>    <role>USER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Bob</givenName>      <surName>Murphy</surName>
+    </individualName>
+<organizationName>Royal Ontario Museum</organizationName><positionName>Senior Curator</positionName>    <address>
+<deliveryPoint>100 Queen&apos;s Park</deliveryPoint><city>Toronto</city><administrativeArea>Ontario</administrativeArea><postalCode>M5S 2C6</postalCode><country>CANADA</country>    </address>
+<phone>1-416-586-7948</phone><onlineUrl>http://www.rom.on.ca/en/collections-research/rom-staff/bob-murphy</onlineUrl>    <role>ADMINISTRATIVE_POINT_OF_CONTACT</role>
+</associatedParty>
+<pubDate>
+        2014-11-20
+</pubDate>
+<language>ENGLISH</language>
+<abstract>
+  <para>Amphibians, Reptiles, preserved specimens. 19 holotypes, 415 paratypes Ambystomatid salamanders, Lacertid lizards, Agamid lizards, Iguanid lizards, Viperid snakes, Ranoid frogs, Hylid frogs, Megophryid frogs The ROM has one of the world&apos;s largest collections of tissues of amphibians and reptiles. Most traditional specimens are whole, alcohol-preserved; some are skeletons.</para>
+</abstract>
+  <keywordSet>
+      <keyword>Occurrence</keyword>
+      <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+  </keywordSet>
+  <keywordSet>
+      <keyword>Specimen</keyword>
+      <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+  </keywordSet>
+  <intellectualRights>
+    <para>This work is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) License http://creativecommons.org/licenses/by-nc/3.0/</para>
+  </intellectualRights>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>Specimens represent all continents and oceans.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>-90</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+      </temporalCoverage>
+  </coverage>
+  <contact>
+    <individualName>
+<givenName>Amy</givenName>      <surName>Lathrop</surName>
+    </individualName>
+<organizationName>Royal Ontario Museum</organizationName><positionName>Collections Technician</positionName>    <address>
+<deliveryPoint>100 Queen&apos;s Park</deliveryPoint><city>Toronto</city><administrativeArea>Ontario</administrativeArea><postalCode>M5S 2C6</postalCode><country>CANADA</country>    </address>
+<phone>1-416-586-5899</phone><electronicMailAddress>amyl@rom.on.ca</electronicMailAddress>  </contact>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+        <dateStamp>2014-11-24T01:33:22.960+01:00</dateStamp>
+        <citation>Royal Ontario Museum: Herpetology Collection - Royal Ontario Museum</citation>
+        <resourceLogoUrl>http://gbif.rom.on.ca:8180/ipt/logo.do?r=herps</resourceLogoUrl>
+        <collection>
+          <parentCollectionIdentifier>Royal Ontario Museum (urn:lsid:biocol.org:col:34778)</parentCollectionIdentifier>
+          <collectionIdentifier>http://grbio.org/cool/ga2q-na5e (urn:lsid:biocol.org:col:34833)</collectionIdentifier>
+          <collectionName>Herpetology</collectionName>
+        </collection>
+        <specimenPreservationMethod>ALCOHOL</specimenPreservationMethod>
+        <livingTimePeriod>1880s to present</livingTimePeriod>
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>

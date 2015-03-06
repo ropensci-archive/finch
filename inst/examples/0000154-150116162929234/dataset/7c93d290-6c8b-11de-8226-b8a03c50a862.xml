@@ -1,0 +1,48 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="7c93d290-6c8b-11de-8226-b8a03c50a862" system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+    <alternateIdentifier system="GBIF_PORTAL">14123</alternateIdentifier>
+  <title>Western Australian Museum provider for OZCAM</title>
+<creator>
+<organizationName>OZCAM (Online Zoological Collections of Australian Museums) Provider</organizationName><onlineUrl>http://www.ozcam.org.au/</onlineUrl></creator>
+<metadataProvider>
+<organizationName>OZCAM (Online Zoological Collections of Australian Museums) Provider</organizationName><onlineUrl>http://www.ozcam.org.au/</onlineUrl></metadataProvider>
+<associatedParty>
+<organizationName>Western Australian Museum</organizationName>    <address>
+<deliveryPoint>Perth Cultural Centre, James Street</deliveryPoint><city>Perth</city><administrativeArea>Western Australia</administrativeArea><postalCode>6000</postalCode><country>AUSTRALIA</country>    </address>
+<onlineUrl>http://www.museum.wa.gov.au/</onlineUrl>    <role>ORIGINATOR</role>
+</associatedParty>
+<associatedParty>
+<organizationName>Atlas of Living Australia</organizationName>    <address>
+<deliveryPoint>CSIRO Ecosystems Services</deliveryPoint><city>Canberra</city><administrativeArea>ACT</administrativeArea><postalCode>2605</postalCode><country>AUSTRALIA</country>    </address>
+<electronicMailAddress>info@ala.org.au</electronicMailAddress>    <role>DISTRIBUTOR</role>
+</associatedParty>
+<pubDate>
+        2014-04-02
+</pubDate>
+<language>ENGLISH</language>
+<abstract>
+  <para>Western Australia Museum provider for OZCAM</para>
+</abstract>
+  <contact>
+    <individualName>
+<givenName>OZCAM</givenName>      <surName>Webmaster</surName>
+    </individualName>
+<positionName>Webmaster</positionName><electronicMailAddress>OZCAM.CHAFC@gmail.com</electronicMailAddress>  </contact>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+        <dateStamp>2012-04-02T04:45:24.000+02:00</dateStamp>
+        <citation>Western Australian Museum: Western Australian Museum provider for OZCAM</citation>
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>

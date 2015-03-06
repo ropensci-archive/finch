@@ -1,0 +1,134 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="6cfaaf9c-d518-4ca3-8dc5-f5aadddc0390" system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+  <title>GBIF Occurrence Download 0000154-150116162929234</title>
+<creator>
+    <individualName>
+      <surName>GBIF Download Service</surName>
+    </individualName>
+</creator>
+<metadataProvider>
+    <individualName>
+      <surName>GBIF Download Service</surName>
+    </individualName>
+</metadataProvider>
+<associatedParty>
+<organizationName>OZCAM (Online Zoological Collections of Australian Museums) Provider</organizationName><onlineUrl>http://www.ozcam.org.au/</onlineUrl>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>MCZ</givenName>      <surName>Harvard University</surName>
+    </individualName>
+<organizationName>Museum of Comparative Zoology</organizationName>    <address>
+<deliveryPoint>26 Oxford Street</deliveryPoint><city>Cambridge</city><administrativeArea>MA</administrativeArea><postalCode>02138</postalCode><country>UNITED_STATES</country>    </address>
+<onlineUrl>http://www.mcz.harvard.edu</onlineUrl>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Bradley</givenName>      <surName>Millen</surName>
+    </individualName>
+<organizationName>Royal Ontario Museum</organizationName><positionName>Database Technician</positionName>    <address>
+<deliveryPoint>100 Queen&apos;s Park</deliveryPoint><city>Toronto</city><administrativeArea>Ontario</administrativeArea><postalCode>M5S 2C6</postalCode><country>CANADA</country>    </address>
+<phone>1-416-586-5899</phone><electronicMailAddress>bradm@rom.on.ca</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Rick</givenName>      <surName>Feeney</surName>
+    </individualName>
+<organizationName>Natural History Museum of Los Angeles County</organizationName><positionName>Fishes Collection Manager</positionName>    <address>
+<deliveryPoint>900 Exposition Blvd.</deliveryPoint><city>Los Angeles</city><administrativeArea>CA</administrativeArea><postalCode>90007</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 213 763 3374</phone><electronicMailAddress>rfeeney@nhm.org</electronicMailAddress><onlineUrl>http://www.nhm.org/</onlineUrl>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+      <surName>MNHN</surName>
+    </individualName>
+<organizationName>MNHN</organizationName><positionName>Provider</positionName>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Ben</givenName>      <surName>Norton</surName>
+    </individualName>
+<organizationName>North Carolina Museum of Natural Sciences</organizationName><positionName>Collections Data Curator</positionName>    <address>
+<deliveryPoint>11 West Jones Street</deliveryPoint><city>Raleigh</city><administrativeArea>NC</administrativeArea><postalCode>27601</postalCode><country>UNITED_STATES</country>    </address>
+<phone>919-707-9947</phone><electronicMailAddress>ben.norton@naturalsciences.org</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Olivia</givenName>      <surName>Lee</surName>
+    </individualName>
+<organizationName>University of British Columbia Herbarium</organizationName><positionName>Collections Manager, Bryophytes, Fungi &amp; Lichen</positionName>    <address>
+<deliveryPoint>3529-6270 University Boulevard</deliveryPoint><city>Vancouver</city><administrativeArea>British Columbia</administrativeArea><postalCode>V6T 1Z4</postalCode><country>CANADA</country>    </address>
+<phone>(604) 822-3344</phone><electronicMailAddress>olivia.lee@botany.ubc.ca</electronicMailAddress><onlineUrl>http://www.biodiversity.ubc.ca/museum/herbarium/</onlineUrl>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Tom</givenName>      <surName>Trombone</surName>
+    </individualName>
+<organizationName>American Museum of Natural History</organizationName><positionName>Data Manager</positionName>    <address>
+<deliveryPoint>Central Park West at 79th Street</deliveryPoint><city>New York</city><administrativeArea>NY</administrativeArea><postalCode>10024</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 212-313-7783</phone><electronicMailAddress>trombone@amnh.org</electronicMailAddress>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Thomas</givenName>      <surName>Orrell</surName>
+    </individualName>
+<organizationName>National Museum of National History, Smithsonian Institution</organizationName><positionName>Branch Chief, NMNH Informatics</positionName>    <address>
+<deliveryPoint>12th St. and Constitution Ave. NW, MRC 136</deliveryPoint><city>Washington</city><administrativeArea>DC</administrativeArea><postalCode>20013-7012</postalCode><country>UNITED_STATES</country>    </address>
+<phone>202-633-2151</phone><electronicMailAddress>orrellt@si.edu</electronicMailAddress><onlineUrl>http://collections.mnh.si.edu</onlineUrl>    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+      <surName>scottcha777</surName>
+    </individualName>
+    <role>AUTHOR</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+      <surName>GBIF Download Service</surName>
+    </individualName>
+    <role>ORIGINATOR</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+      <surName>GBIF Download Service</surName>
+    </individualName>
+    <role>METADATA_AUTHOR</role>
+</associatedParty>
+<pubDate>
+        2015-01-18
+</pubDate>
+<language>ENGLISH</language>
+<abstract>
+  <para>A dataset containing all occurrences available in GBIF matching the query: {&quot;type&quot;:&quot;and&quot;,&quot;predicates&quot;:[{&quot;type&quot;:&quot;equals&quot;,&quot;key&quot;:&quot;COUNTRY&quot;,&quot;value&quot;:&quot;PR&quot;},{&quot;type&quot;:&quot;equals&quot;,&quot;key&quot;:&quot;ISSUE&quot;,&quot;value&quot;:&quot;COORDINATE_INVALID&quot;}]}&lt;br/&gt;The dataset includes records from the following constituent datasets. The full metadata for each constituent is also included in this archive:&lt;br/&gt;1 records from Western Australian Museum provider for OZCAM&lt;br/&gt;1 records from LACM Vertebrate Collection&lt;br/&gt;1 records from AMNH Mammal Collections&lt;br/&gt;1 records from NMNH occurrence DwC-A&lt;br/&gt;2 records from Molluscs collection (IM) of the Muséum national d&apos;Histoire naturelle (MNHN - Paris)&lt;br/&gt;11 records from Museum of Comparative Zoology, Harvard University&lt;br/&gt;15 records from NCSM Invertebrates Collection&lt;br/&gt;17 records from Herpetology Collection - Royal Ontario Museum&lt;br/&gt;45 records from UNSM Vertebrate Specimens&lt;br/&gt;349 records from University of British Columbia Herbarium (UBC) - Bryophytes Collection&lt;br/&gt;</para>
+</abstract>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+        <citation identifier="0000154-150116162929234">GBIF Occurrence Download 0000154-150116162929234</citation>
+        <physical>
+          <objectName></objectName>
+          <characterEncoding>UTF-8</characterEncoding>
+          <dataFormat>
+            <externallyDefinedFormat>
+              <formatName>Darwin Core Archive</formatName>
+            </externallyDefinedFormat>
+          </dataFormat>
+          <distribution>
+            <online>
+              <url function="download">http://api.gbif.org/v1/occurrence/download/request/0000154-150116162929234.zip</url>
+            </online>
+          </distribution>
+        </physical>
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>

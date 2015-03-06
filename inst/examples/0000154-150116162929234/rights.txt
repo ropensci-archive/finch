@@ -1,0 +1,31 @@
+
+
+Dataset: Western Australian Museum provider for OZCAM
+Rights as supplied: Not supplied
+
+Dataset: Museum of Comparative Zoology, Harvard University
+Rights as supplied: Copyright © 2012 The President and Fellows of Harvard College
+
+Dataset: Herpetology Collection - Royal Ontario Museum
+Rights as supplied: This work is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) License http://creativecommons.org/licenses/by-nc/3.0/
+
+Dataset: LACM Vertebrate Collection
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0
+
+Dataset: Molluscs collection (IM) of the Muséum national d'Histoire naturelle (MNHN - Paris)
+Rights as supplied: Not supplied
+
+Dataset: NCSM Invertebrates Collection
+Rights as supplied: http://creativecommons.org/publicdomain/zero/1.0/
+
+Dataset: University of British Columbia Herbarium (UBC) - Bryophytes Collection
+Rights as supplied: Not supplied
+
+Dataset: UNSM Vertebrate Specimens
+Rights as supplied: These data cannot be utilized in any publication or report, internal or external, without specific acknowledgement of the Division of Zoology and the University of Nebraska State Museum. These data, in whole or part, cannot be transferred to a third party without the written consent of the University of Nebraska State Museum. The University of Nebraska State Museum cannot be held responsible for inaccuracies in these data.
+
+Dataset: AMNH Mammal Collections
+Rights as supplied: The terms and conditions of use of AMNH data are given in the document found at http://research.amnh.org/vertzoo/TandC.pdf.
+
+Dataset: NMNH occurrence DwC-A
+Rights as supplied: NMNH public data constitute a compilation of data, all rights to which, including copyright, are owned by the Smithsonian Institution. Except as otherwise expressly stated at http://www.mnh.si.edu/rc/db/2data_access_policy.html, the information, records, or images in these databases may not be reproduced, distributed, or publicly displayed, in whole or in part, without the express written permission of the National Museum of Natural History, Smithsonian Institution.

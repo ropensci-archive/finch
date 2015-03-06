@@ -11,6 +11,8 @@ knitr::opts_chunk$set(
 ```
 
 [![Build Status](https://api.travis-ci.org/ropensci/finch.png)](https://travis-ci.org/ropensci/finch)
+[![Build status](https://ci.appveyor.com/api/projects/status/rsjg02cbwfbujxn0?svg=true)](https://ci.appveyor.com/project/sckott/finch)
+[![Coverage Status](https://coveralls.io/repos/ropensci/finch/badge.svg)](https://coveralls.io/r/ropensci/finch)
 
 `finch` parses Darwin Core simple and archive files
  
@@ -128,3 +130,11 @@ head( out$data[[1]][,c(1:5)] )
 ```
 
 You can also give `dwca()` a local directory, or url that contains a Darwin Core Archive. 
+
+## Meta
+
+* Please [report any issues or bugs](https://github.com/ropensci/finch/issues).
+* License: MIT
+* Get citation information for `finch` in R doing `citation(package = 'finch')`
+
+[![rofooter](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)

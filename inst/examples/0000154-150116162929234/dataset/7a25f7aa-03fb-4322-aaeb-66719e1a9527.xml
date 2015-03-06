@@ -1,0 +1,131 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="7a25f7aa-03fb-4322-aaeb-66719e1a9527" system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+    <alternateIdentifier system="GBIF_PORTAL">14305</alternateIdentifier>
+  <title>LACM Vertebrate Collection</title>
+<creator>
+    <individualName>
+<givenName>Rick</givenName>      <surName>Feeney</surName>
+    </individualName>
+<organizationName>Natural History Museum of Los Angeles County</organizationName><positionName>Fishes Collection Manager</positionName>    <address>
+<deliveryPoint>900 Exposition Blvd.</deliveryPoint><city>Los Angeles</city><administrativeArea>CA</administrativeArea><postalCode>90007</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 213 763 3374</phone><electronicMailAddress>rfeeney@nhm.org</electronicMailAddress><onlineUrl>http://www.nhm.org/</onlineUrl></creator>
+<metadataProvider>
+    <individualName>
+<givenName>Rick</givenName>      <surName>Feeney</surName>
+    </individualName>
+<organizationName>Natural History Museum of Los Angeles County</organizationName><positionName>Fishes Collection Manager</positionName>    <address>
+<deliveryPoint>900 Exposition Blvd.</deliveryPoint><city>Los Angeles</city><administrativeArea>CA</administrativeArea><postalCode>90007</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 213 763 3374</phone><electronicMailAddress>rfeeney@nhm.org</electronicMailAddress><onlineUrl>http://www.nhm.org/</onlineUrl></metadataProvider>
+<associatedParty>
+    <individualName>
+<givenName>Neftali</givenName>      <surName>Camacho</surName>
+    </individualName>
+<organizationName>Natural History Museum of Los Angeles County</organizationName><positionName>Herpetology Collection Manager</positionName>    <address>
+<deliveryPoint>900 Exposition Blvd.</deliveryPoint><city>Los Angeles</city><administrativeArea>CA</administrativeArea><postalCode>90007</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 213 763 3371</phone><electronicMailAddress>ncamacho@nhm.org</electronicMailAddress><onlineUrl>http://www.nhm.org/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Jim</givenName>      <surName>Dines</surName>
+    </individualName>
+<organizationName>Natural History Museum of Los Angeles County</organizationName><positionName>Mammalogy Collection Manager</positionName>    <address>
+<deliveryPoint>900 Exposition Blvd.</deliveryPoint><city>Los Angeles</city><administrativeArea>CA</administrativeArea><postalCode>90007</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 213 763 3400</phone><electronicMailAddress>jdines@nhm.org</electronicMailAddress><onlineUrl>http://www.nhm.org/</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Kimball</givenName>      <surName>Garrett</surName>
+    </individualName>
+<organizationName>Natural History Museum of Los Angeles County</organizationName><positionName>Collection Manager - Birds</positionName>    <address>
+<deliveryPoint>900 Exposition Blvd.</deliveryPoint><city>Los Angeles</city><administrativeArea>California</administrativeArea><postalCode>90007</postalCode><country>UNITED_STATES</country>    </address>
+<phone>213-763-3368</phone><electronicMailAddress>kgarrett@nhm.org</electronicMailAddress><onlineUrl>http://www.nhm.org/site/research-collections/ornithology</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>John</givenName>      <surName>Wieczorek</surName>
+    </individualName>
+<organizationName>Museum of Vertebrate Zoology at Berkeley</organizationName><positionName>Information Architect</positionName><electronicMailAddress>tuco@berkeley.edu</electronicMailAddress>    <role>PROGRAMMER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>David</givenName>      <surName>Bloom</surName>
+    </individualName>
+<organizationName>VertNet</organizationName><positionName>VertNet Coordinator</positionName><electronicMailAddress>dbloom@vertnet.org</electronicMailAddress>    <role>PROGRAMMER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Laura</givenName>      <surName>Russell</surName>
+    </individualName>
+<organizationName>VertNet</organizationName><positionName>VertNet Programmer</positionName><electronicMailAddress>larussell@vertnet.org</electronicMailAddress>    <role>PROGRAMMER</role>
+</associatedParty>
+<pubDate>
+        2014-07-26
+</pubDate>
+<language>ENGLISH</language>
+<abstract>
+  <para>The Collection includes the Fish, Herpetology, Bird and Mammal Collections of the Natural History Museum of Los Angeles County. They are worldwide collections with greatest concentration in North and South America, Africa, the Pacific Ocean, and the Antarctic.</para>
+</abstract>
+  <keywordSet>
+      <keyword>Occurrence</keyword>
+      <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+  </keywordSet>
+  <keywordSet>
+      <keyword>Specimen</keyword>
+      <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+  </keywordSet>
+  <intellectualRights>
+    <para>http://creativecommons.org/publicdomain/zero/1.0</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">http://www.nhm.org/</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>A worldwide collection with greatest concentration in North and South America, Africa, the Pacific Ocean, and the Antarctic.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>-90</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+          <rangeOfDates>
+            <beginDate>
+              <calendarDate>        1790-01-01
+</calendarDate>
+            </beginDate>
+            <endDate>
+              <calendarDate>        2012-06-01
+</calendarDate>
+            </endDate>
+          </rangeOfDates>
+      </temporalCoverage>
+  </coverage>
+  <contact>
+    <individualName>
+<givenName>Rick</givenName>      <surName>Feeney</surName>
+    </individualName>
+<organizationName>Natural History Museum of Los Angeles County</organizationName><positionName>Fishes Collection Manager</positionName>    <address>
+<deliveryPoint>900 Exposition Blvd.</deliveryPoint><city>Los Angeles</city><administrativeArea>CA</administrativeArea><postalCode>90007</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+01 213 763 3374</phone><electronicMailAddress>rfeeney@nhm.org</electronicMailAddress><onlineUrl>http://www.nhm.org/</onlineUrl>  </contact>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+        <dateStamp>2014-07-30T06:16:27.269+02:00</dateStamp>
+        <citation>Natural History Museum of Los Angeles County: LACM Vertebrate Collection</citation>
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>

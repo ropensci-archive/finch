@@ -1,0 +1,672 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="4bfac3ea-8763-4f4b-a71a-76a6f5f243d3" system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+    <alternateIdentifier system="GBIF_PORTAL">14100</alternateIdentifier>
+  <title>Museum of Comparative Zoology, Harvard University</title>
+<creator>
+    <individualName>
+<givenName>MCZ</givenName>      <surName>Harvard University</surName>
+    </individualName>
+<organizationName>Museum of Comparative Zoology</organizationName>    <address>
+<deliveryPoint>26 Oxford Street</deliveryPoint><city>Cambridge</city><administrativeArea>MA</administrativeArea><postalCode>02138</postalCode><country>UNITED_STATES</country>    </address>
+<onlineUrl>http://www.mcz.harvard.edu</onlineUrl></creator>
+<metadataProvider>
+    <individualName>
+<givenName>Paul J.</givenName>      <surName>Morris</surName>
+    </individualName>
+<organizationName>Harvard University Herbaria and Museum of Comparative Zoology</organizationName><positionName>Biodiversity Informatics Manager</positionName>    <address>
+<deliveryPoint>22 Divinity Ave</deliveryPoint><city>Cambridge</city><administrativeArea>MA</administrativeArea><postalCode>02138</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>bdim@oeb.harvard.edu</electronicMailAddress></metadataProvider>
+<associatedParty>
+    <individualName>
+<givenName>Brendan</givenName>      <surName>Haley</surName>
+    </individualName>
+<organizationName>Museum of Comparative Zoology</organizationName><positionName>Senior Database Manager</positionName>    <address>
+<deliveryPoint>26 Oxford Street</deliveryPoint><city>Cambridge</city><administrativeArea>MA</administrativeArea><postalCode>02138</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>bhaley@oeb.harvard.edu</electronicMailAddress>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Linda S.</givenName>      <surName>Ford</surName>
+    </individualName>
+<organizationName>Museum of Comparative Zoology</organizationName><positionName>Director of Collections Operations</positionName>    <address>
+<deliveryPoint>26 Oxford St</deliveryPoint><city>Cambridge</city><administrativeArea>MA</administrativeArea><postalCode>02138</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>lford@oeb.harvard.edu</electronicMailAddress><onlineUrl>http://www.mcz.harvard.edu/contacts/administrative.html</onlineUrl>    <role>POINT_OF_CONTACT</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Paul J.</givenName>      <surName>Morris</surName>
+    </individualName>
+<organizationName>Harvard University Herbaria and Museum of Comparative Zoology</organizationName><positionName>Biodiversity Informatics Manager</positionName>    <address>
+<deliveryPoint>22 Divinity Ave</deliveryPoint><city>Cambridge</city><administrativeArea>MA</administrativeArea><postalCode>02138</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>mole@oeb.harvard.edu</electronicMailAddress>    <role>ADMINISTRATIVE_POINT_OF_CONTACT</role>
+</associatedParty>
+<pubDate>
+        2015-01-08
+</pubDate>
+<language>ENGLISH</language>
+<abstract>
+  <para>The Museum of Comparative Zoology was founded in 1859 on the concept that collections are an integral and fundamental component of zoological research and teaching. This more than 150-year-old commitment remains a strong and proud tradition for the MCZ.
+
+The present-day MCZ contains over 21-million specimens in ten research collections which comprise one of the world&apos;s richest and most varied resources for studying the diversity of life. The museum serves as the primary repository for zoological specimens collected by past and present Harvard faculty-curators, staff and associates conducting research around the world.
+
+As a premier university museum and research institution, the specimens and their related data are available to researchers of the scientific and museum community.</para>
+</abstract>
+  <keywordSet>
+      <keyword>Occurrence</keyword>
+      <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+  </keywordSet>
+  <keywordSet>
+      <keyword>Specimen</keyword>
+      <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+  </keywordSet>
+  <additionalInfo>
+    <para>The MCZ does not guarantee the accuracy of these data. Individual researchers should verify individual records by making direct reference to corresponding museum specimens.
+
+For terms and conditions of use, see: http://www.mcz.harvard.edu/privacy/user.html</para>
+  </additionalInfo>
+  <intellectualRights>
+    <para>Copyright © 2012 The President and Fellows of Harvard College</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">http://mczbase.mcz.harvard.edu/</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>Global geographic scope.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>-90</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+          <rangeOfDates>
+            <beginDate>
+              <calendarDate>        1679-01-01
+</calendarDate>
+            </beginDate>
+            <endDate>
+              <calendarDate>        2013-08-12
+</calendarDate>
+            </endDate>
+          </rangeOfDates>
+      </temporalCoverage>
+        <taxonomicCoverage>
+            <generalTaxonomicCoverage>Recent and Fossil Animals.</generalTaxonomicCoverage>
+            <taxonomicClassification>
+                <taxonRankName>Kingdom</taxonRankName>
+              <taxonRankValue>Animalia</taxonRankValue>
+                <commonName>Animals</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Mollusca</taxonRankValue>
+                <commonName>Mollusks</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Nematoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Arthropoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Annelida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Echiura</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Coelenterata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Pentastomida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Nematoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Priapulida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Acanthocephala</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Myzostomida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Cycliophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Chaetognatha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Rotifera</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Nematomorpha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Cnidaria</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Sipuncula</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Platyhelminthes</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Ectoprocta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Sipuncula</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Ctenophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Tunicata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Radiolaria</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Tardigrada</taxonRankValue>
+                <commonName>Water Bears</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Chordata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Cnidaria</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Porifera</taxonRankValue>
+                <commonName>Sponges</commonName>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Onychophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Kingdom</taxonRankName>
+              <taxonRankValue>Protozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Nemertea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Phylum</taxonRankName>
+              <taxonRankValue>Echinodermata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Acantharia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Actinopterygii</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Adenophorea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Ammonoidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Amphibia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Annelida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Anopla</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Anthozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Aplacophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Appendicularia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Arachnida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Archaeocyatha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Archiacanthocephala</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Arthropoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Ascidiacea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Asteroidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Asterozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Aves</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Bivalvia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Blastoidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Blastozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Branchiopoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Branchiura</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Bryozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Calcarea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Cephalocarida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Cephalopoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Cephalopodea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Cestoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Chelicerata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Chilopoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Chondrichthys</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Cirripedia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Copepoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Crinoidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Crinozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Crustacea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Cubozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Demospongiae</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Diplopoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Echinoidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Echinozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Echiuroidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Enopla</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Entoprocta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Eucycliophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Gastropoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Gordioidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Granuloreticulosa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Heliozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Hexactinellida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Hirudinea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Holothuroidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Hyalospongiae</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Hydroidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Hydrozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Hyolitha</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Insecta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Larvacea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Malacostraca</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Mammalia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Maxillopoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Merostomata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Monoplacophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Myxini</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Myzostomida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Nautiloidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Nectonematoida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Nudibranchia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Oligochaeta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Opalinea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Ostracoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Palaeacanthocephala</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Pauropoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Pentastomida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Petromyzontidia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Phascolosomatidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Polychaeta</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Polyplacophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Prosobranchs</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Pteropoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Pycnogonida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Reptilia</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Rhizopodea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Sarcopterygii</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Scaphopoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Scyphozoa</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Secernentea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Siphonophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Sipunculidea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Stylommatophora</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Symphyla</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Tentaculata</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Thaliacea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Trematoda</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Trilobita</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Turbellaria</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Xenophyophorea</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Xiphosurida</taxonRankValue>
+            </taxonomicClassification>
+            <taxonomicClassification>
+                <taxonRankName>Class</taxonRankName>
+              <taxonRankValue>Zoantharia</taxonRankValue>
+            </taxonomicClassification>
+        </taxonomicCoverage>
+  </coverage>
+  <contact>
+    <individualName>
+<givenName>Brendan Haley</givenName>      <surName>Haley</surName>
+    </individualName>
+<organizationName>Museum of Comparative Zoology</organizationName><positionName>Senior Database Manager</positionName>    <address>
+<deliveryPoint>26 Oxford Street, Cambridge, MA US, 02138</deliveryPoint><city>Cambridge</city><administrativeArea>MA</administrativeArea><postalCode>02138</postalCode><country>UNITED_STATES</country>    </address>
+<electronicMailAddress>bhaley@oeb.harvard.edu</electronicMailAddress>  </contact>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+        <dateStamp>2015-01-16T03:18:41.557+01:00</dateStamp>
+        <citation>Museum of Comparative Zoology, Harvard University: Museum of Comparative Zoology, Harvard University</citation>
+        <physical>
+          <objectName>Museum of Comparative Zoology home page</objectName>
+          <characterEncoding>UTF-8</characterEncoding>
+          <dataFormat>
+            <externallyDefinedFormat>
+              <formatName>web service</formatName>
+            </externallyDefinedFormat>
+          </dataFormat>
+          <distribution>
+            <online>
+              <url function="download">http://www.mcz.harvard.edu/</url>
+            </online>
+          </distribution>
+        </physical>
+        <resourceLogoUrl>http://www.mcz.harvard.edu/images_utility/favicon.ico</resourceLogoUrl>
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>

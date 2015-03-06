@@ -1,0 +1,2 @@
+gbifID	type	format	identifier	references	title	description	created	creator	contributor	publisher	audience	source	license	rightsHolder
+1019692255	StillImage	image/jpeg	http://mediaphoto.mnhn.fr/media/14032589661434cmJmKscFTnTeiqv					Caballer M.						

@@ -1,0 +1,119 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="0214a6a7-898f-4ee8-b888-0be60ecde81f" system="http://gbif.org" scope="system"
+         xml:lang="en">
+
+<dataset>
+    <alternateIdentifier system="GBIF_PORTAL">13706</alternateIdentifier>
+  <title>Molluscs collection (IM) of the Muséum national d&apos;Histoire naturelle (MNHN - Paris)</title>
+<creator>
+    <individualName>
+      <surName>MNHN</surName>
+    </individualName>
+<organizationName>MNHN</organizationName><positionName>Provider</positionName></creator>
+<metadataProvider>
+    <individualName>
+<givenName>Simon</givenName>      <surName>Chagnoux</surName>
+    </individualName>
+<electronicMailAddress>gbifprovider@mnhn.fr</electronicMailAddress></metadataProvider>
+<associatedParty>
+    <individualName>
+<givenName>Gilberto</givenName>      <surName>Marani</surName>
+    </individualName>
+    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Philippe</givenName>      <surName>Maestrati</surName>
+    </individualName>
+    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Pierre</givenName>      <surName>Lozouet</surName>
+    </individualName>
+    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Virginie</givenName>      <surName>Héros</surName>
+    </individualName>
+    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Jérôme</givenName>      <surName>Mainguy</surName>
+    </individualName>
+    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Barbara</givenName>      <surName>Buge</surName>
+    </individualName>
+    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<associatedParty>
+    <individualName>
+<givenName>Philippe</givenName>      <surName>Bouchet</surName>
+    </individualName>
+    <role>CONTENT_PROVIDER</role>
+</associatedParty>
+<pubDate>
+        2014-12-08
+</pubDate>
+<language>FRENCH</language>
+<abstract>
+  <para>The collection of marine, terrestrial and freshwater molluscs is primarily a scientific but also a 
+historical and museological collection. It includes about 800 000 lots, totaling approximately 5 million specimens
+ from around the world. These specimens are preserved as either dry collection (dried animals, shells) 
+or in alcohol. The type collection contains 11 000 types of nominal species. 
+The collection dates back to Michel Adanson (shells of Senegal, 1757) and Jean-Baptiste Lamarck. 
+It then increased through donations of amateur collectors, institutional legacies and purchases, and the activity of scientists 
+from both the Museum and other institutions. This diversity of sources continues today, but large expeditions have been very important 
+from the late eighteenth century through to the colonial era, a role they continue to play to this day. 
+The &quot;Tropical Deep-Sea benthos&quot; oceanographic expeditions (formerly MUSORSTOM), launched in the early 1980s to sample the benthos of the 
+tropical South and West-Pacific, have resulted in the collection becoming the best in the world for deep-sea faunas 
+(100-1.500 m bathymetric zone). It is particularly rich in micromolluscs. Historical sections of the collection contain representatives 
+of terrestrial and freshwater molluscs that are now extinct.</para>
+</abstract>
+  <keywordSet>
+      <keyword>Occurrence</keyword>
+      <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+  </keywordSet>
+  <keywordSet>
+      <keyword>Specimen</keyword>
+      <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+  </keywordSet>
+  <keywordSet>
+      <keyword>Types</keyword>
+      <keyword>Marine</keyword>
+      <keyword>Zoology</keyword>
+      <keyword>Molluscs</keyword>
+      <keyword>Collections</keyword>
+      <keyword>Taxonomy</keyword>
+      <keyword>Invertebrates</keyword>
+      <keyword>Mollusca</keyword>
+      <keyword>Specimens</keyword>
+      <keywordThesaurus>No keyword thesaurus designated</keywordThesaurus>
+  </keywordSet>
+  <contact>
+    <individualName>
+<givenName>Simon Chagnoux</givenName>      <surName>Lozouet</surName>
+    </individualName>
+<organizationName>MNHN</organizationName><positionName>Correspondant</positionName>    <address>
+    </address>
+<electronicMailAddress>gbifprovider@mnhn.fr</electronicMailAddress>  </contact>
+
+</dataset>
+
+<additionalMetadata>
+  <metadata>
+    <gbif>
+        <dateStamp>2014-12-15T09:01:40.630+01:00</dateStamp>
+        <citation>MNHN - Museum national d&apos;Histoire naturelle: Molluscs collection (IM) of the Muséum national d&apos;Histoire naturelle (MNHN - Paris)</citation>
+    </gbif>
+  </metadata>
+</additionalMetadata>
+
+</eml:eml>
