@@ -1,14 +1,15 @@
-language: c
+language: r
 
-script: "./travis-tool.sh run_tests"
+r_github_packages:
+- jimhester/covr
+- ropensci/EML
 
-before_script:
-- curl -OL http://raw.github.com/craigcitro/r-travis/master/scripts/travis-tool.sh
-- chmod 755 ./travis-tool.sh
-- "./travis-tool.sh bootstrap"
-- "./travis-tool.sh install_github ropensci/EML"
-- "./travis-tool.sh install_deps"
+after_success:
+- Rscript -e 'library(covr); coveralls()'
 
 notifications:
+  email:
+    on_success: change
+    on_failure: change
   slack:
     secure: YO8T9bcDOws/skyUehUe3p6FmooNgXh6yHpq4x2Nm9ROoHRBGfTOp+Aq4zds13ISokvxQEDW37wae7BbcteFAdLrxqyNHPnM/AnhCviiDSE/fcwMoOOsYreZGGazVGbIxsbK/OLH1nTva6Qow6e44QlahokFpO4Qjd6obvvIHSo=
