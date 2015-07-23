@@ -1,11 +1,10 @@
 Package: finch
-Title: Parse and create Darwin Core Simple and Archive Files
-Description: Parse and create Darwin Core Simple and Archive files. Functionality
-    includes reading and parsing all the files in a Darwin Core Archive, including
-    the datasets and metadata. In addition, simple Darwin Core files can be read
-    and parsed. Last, validation of Darwin Core files can be done (not yet though)
+Title: Parse and Create 'Darwin' Core Files
+Description: Parse and create 'Darwin' Core Simple and Archive files. Functionality
+    includes reading and parsing all the files in a 'Darwin' Core Archive, including
+    the datasets and metadata. In addition, simple 'Darwin' Core files can be read
+    and parsed. Last, validation of 'Darwin' Core files can be done.
 Version: 0.0.2.9000
-Date: 2015-01-20
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com")
 License: MIT + file LICENSE
