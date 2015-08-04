@@ -7,7 +7,7 @@ r_github_packages:
 - ropensci/EML
 
 after_success:
-- Rscript -e 'library(covr); coveralls()'
+- Rscript -e 'covr::codecov()'
 
 notifications:
   email:

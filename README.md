@@ -5,7 +5,7 @@ finch
 
 [![Build Status](https://api.travis-ci.org/ropensci/finch.png)](https://travis-ci.org/ropensci/finch)
 [![Build status](https://ci.appveyor.com/api/projects/status/rsjg02cbwfbujxn0?svg=true)](https://ci.appveyor.com/project/sckott/finch)
-[![Coverage Status](https://coveralls.io/repos/ropensci/finch/badge.svg)](https://coveralls.io/r/ropensci/finch)
+[![codecov.io](https://codecov.io/github/ropensci/finch/coverage.svg?branch=master)](https://codecov.io/github/ropensci/finch?branch=master)
 
 `finch` parses Darwin Core simple and archive files
  

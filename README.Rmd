@@ -3,7 +3,7 @@ finch
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(
-  warning = FALSE, 
+  warning = FALSE,
   message = FALSE,
   collapse = TRUE,
   comment = "#>"
@@ -12,10 +12,10 @@ knitr::opts_chunk$set(
 
 [![Build Status](https://api.travis-ci.org/ropensci/finch.png)](https://travis-ci.org/ropensci/finch)
 [![Build status](https://ci.appveyor.com/api/projects/status/rsjg02cbwfbujxn0?svg=true)](https://ci.appveyor.com/project/sckott/finch)
-[![Coverage Status](https://coveralls.io/repos/ropensci/finch/badge.svg)](https://coveralls.io/r/ropensci/finch)
+[![codecov.io](https://codecov.io/github/ropensci/finch/coverage.svg?branch=master)](https://codecov.io/github/ropensci/finch?branch=master)
 
 `finch` parses Darwin Core simple and archive files
- 
+
 ## Install
 
 First, get `EML` from GitHub since it's not on CRAN yet
@@ -35,9 +35,9 @@ devtools::install_github("ropensci/finch")
 library("finch")
 ```
 
-## Parse 
+## Parse
 
-To parse a simple darwin core file like 
+To parse a simple darwin core file like
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -129,7 +129,7 @@ View one of the datasets, brief overview.
 head( out$data[[1]][,c(1:5)] )
 ```
 
-You can also give `dwca()` a local directory, or url that contains a Darwin Core Archive. 
+You can also give `dwca()` a local directory, or url that contains a Darwin Core Archive.
 
 ## Meta
 
