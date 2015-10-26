@@ -6,6 +6,16 @@ pluck <- function(x, name, type) {
   }
 }
 
+fcmp <- function(z) Filter(Negate(is.null), z)
+
+checkforpkg <- function(x) {
+  if (!requireNamespace(x, quietly = TRUE)) {
+    stop("Please install ", x, call. = FALSE)
+  } else {
+    invisible(TRUE)
+  }
+}
+
 # validate_schema <- function(x){
 #   XML::xmlSchemaValidate(xml, )
 # }

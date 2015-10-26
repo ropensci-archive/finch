@@ -82,7 +82,7 @@ This file is in this package as an example file, get the file, then `simple()`
 
 ```{r}
 file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
-out <- simple(file)
+out <- simple_read(file)
 ```
 
 Index to `meta`, `dc` or `dwc`
@@ -99,7 +99,7 @@ There's an example Darwin Core Archive:
 
 ```{r}
 file <- system.file("examples", "0000154-150116162929234.zip", package = "finch")
-(out <- dwca(file, read = TRUE))
+(out <- dwca_read(file, read = TRUE))
 ```
 
 List files in the archive

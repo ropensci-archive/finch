@@ -8,6 +8,7 @@ install:
   ps: Bootstrap
 
 build_script:
+  - travis-tool.sh r_install httr jsonlite
   - travis-tool.sh install_github ropensci/EML
   - travis-tool.sh install_deps
 

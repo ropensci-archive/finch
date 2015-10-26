@@ -1,18 +1,16 @@
 #' Parse a simple darwin core file
 #'
 #' @export
-#'
-#' @param file A simple darwin core file in XML format
+#' @param file (character) A path to a single simple Darwin Core file in XML format
 #' @examples \dontrun{
 #' file <- system.file("examples", "example_simple.xml", package = "finch")
-#' simple(file)
+#' simple_read(file)
 #' file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
-#' simple(file)
+#' simple_read(file)
 #' file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
-#' simple(file)
+#' simple_read(file)
 #' }
-
-simple <- function(file){
+simple_read <- function(file){
   if ( !file.exists(file) ) stop("That file does not exist", call. = FALSE)
   xml <- xmlParse(file)
   dc <- xpathSApply(xml, "//dc:*")

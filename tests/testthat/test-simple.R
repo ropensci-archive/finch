@@ -1,10 +1,10 @@
 context("simple")
 
 file1 <- system.file("examples", "example_simple.xml", package = "finch")
-a <- simple(file1)
+a <- simple_read(file1)
 
 file2 <- system.file("examples", "example_simple_fossil.xml", package = "finch")
-b <- simple(file2)
+b <- simple_read(file2)
 
 # darwin record set...
 # file3 <- system.file("examples", "example_classes_specimen.xml", package = "finch")

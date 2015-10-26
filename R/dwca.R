@@ -14,7 +14,7 @@
 #' dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 #'
 #' # Don't read data in
-#' x <- dwca(dir, read=FALSE)
+#' x <- dwca_read(dir, read=FALSE)
 #' x
 #' x$files
 #' x$highmeta
@@ -22,13 +22,13 @@
 #' x$data
 #'
 #' # Read data
-#' x <- dwca(dir, read=TRUE)
+#' x <- dwca_read(dir, read=TRUE)
 #' x
 #' head( x$data[[1]] )
 #'
 #' # Can pass in a zip file
 #' zip <- system.file("examples", "0000154-150116162929234.zip", package = "finch")
-#' out <- dwca(zip)
+#' out <- dwca_read(zip)
 #' out$files
 #' out$highmeta
 #' out$emlmeta
@@ -37,10 +37,10 @@
 #' # Can pass in zip file as a url
 #' url <-
 #'"https://github.com/ropensci/finch/blob/master/inst/examples/0000154-150116162929234.zip?raw=true"
-#' (out <- dwca(url))
+#' (out <- dwca_read(url))
 #' }
 
-dwca <- function(input, read=FALSE, ...){
+dwca_read <- function(input, read=FALSE, ...){
   # check file type
   x <- as.location(input)
   x <- process(x)

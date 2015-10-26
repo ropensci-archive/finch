@@ -7,7 +7,7 @@
 schema_validate(file)
 }
 \arguments{
-\item{file}{A file path}
+\item{file}{(character) A file path. Must be a Darwin Core Archive file}
 }
 \description{
 Validate a Darwin Core Archive file using the DCA schema
@@ -18,6 +18,10 @@ file <- system.file("examples", "example_simple.xml", package = "finch")
 file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
 file <- system.file("examples", "example_classes_observation.xml", package = "finch")
 schema_validate(file)
+
+x <- system.file("examples", "example_bad1.xml", package = "finch")
+schema_validate(x)
 }
 }
+\keyword{internal}
 
