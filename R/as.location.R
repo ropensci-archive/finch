@@ -4,7 +4,7 @@
 #'
 #' @param x Input.
 #' @param ... Ignored.
-#' @examples \donttest{
+#' @examples \dontrun{
 #' # A zip file
 #' file <- "~/Downloads/0000154-150116162929234.zip"
 #' as.location(file)

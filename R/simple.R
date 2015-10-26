@@ -1,7 +1,6 @@
 #' Parse a simple darwin core file
 #'
 #' @export
-#' @import XML
 #'
 #' @param file A simple darwin core file in XML format
 #' @examples \dontrun{

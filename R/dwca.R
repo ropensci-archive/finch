@@ -1,8 +1,6 @@
 #' Parse Darwin Core Archive
 #'
 #' @export
-#' @import EML data.table
-#' @importFrom plyr rbind.fill
 #'
 #' @param input Path to local zip file, directory, or a url.
 #' @param read (logical)
@@ -151,7 +149,7 @@ read_data <- function(x, read){
 try_read <- function(z){
   res <- tryCatch(
     suppressWarnings(
-      fread(z, stringsAsFactors = FALSE, data.table = FALSE)
+      data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE)
     ), error = function(e) e
   )
   if( is(res, "simpleError") )
