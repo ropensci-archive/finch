@@ -9,20 +9,21 @@ finch
 
 `finch` parses Darwin Core simple and archive files
 
+In the future, we may make it easy to create Darwin Core archive files as well.
+
 * Darwin Core description at Biodiversity Information Standards site [http://rs.tdwg.org/dwc/](http://rs.tdwg.org/dwc/)
 * Darwin Core at Wikipedia [https://en.wikipedia.org/wiki/Darwin_Core](https://en.wikipedia.org/wiki/Darwin_Core)
 
 ## Install
 
-First, get `EML` from GitHub since it's not on CRAN yet
+Stable version, from CRAN (not there yet, but soon..)
 
 
 ```r
-install.packages("devtools")
-devtools::install_github("ropensci/EML", build=FALSE, dependencies=c("DEPENDS", "IMPORTS"))
+install.packages("finch")
 ```
 
-Then install and load `finch`
+Development version, from GitHub
 
 
 ```r
