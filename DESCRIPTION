@@ -11,6 +11,7 @@ License: MIT + file LICENSE
 LazyData: true
 URL: https://github.com/ropensci/finch
 BugReports: https://github.com/ropensci/finch/issues
+Additional_repositories: http://packages.ropensci.org
 Imports:
     methods,
     utils,

@@ -75,15 +75,20 @@ try_meta <- function(x) {
   out
 }
 
+# test if file contents is EML
 is_eml <- function(x) any( grepl("eml:eml", readLines(x, n = 5)) )
 
+# gives back file path
 get_eml <- function(x){
   tmp <- xmlParse(grep("meta.xml", x, value = TRUE))
   ff <- xmlToList(xmlChildren(tmp)$archive)$.attrs[["metadata"]]
   grep(ff, x, value = TRUE)
 }
 
-try_eml <- function(x) EML::eml_read(get_eml(x))
+# try to read in EML metadata
+try_eml <- function(w) {
+  EML::eml_read(get_eml(w))
+}
 
 #' @export
 print.dwca_gbif <- function(x, ...){
