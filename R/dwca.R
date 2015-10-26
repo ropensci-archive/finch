@@ -26,25 +26,18 @@
 #' x
 #' head( x$data[[1]] )
 #'
-#' out <- dwca("~/Downloads/0000143-150116162929234/")
-#' out
-#' dwca("~/Downloads/0000143-150116162929234/", TRUE)
-#' dwca("~/Downloads/0000154-150116162929234/", TRUE)
-#'
 #' # Can pass in a zip file
-#' out <- dwca("~/Downloads/0000154-150116162929234.zip")
-#' out <- dwca("~/Downloads/DwCArchive_Cicadellinae.zip")
+#' zip <- system.file("examples", "0000154-150116162929234.zip", package = "finch")
+#' out <- dwca(zip)
 #' out$files
 #' out$highmeta
 #' out$emlmeta
 #' out$dataset_meta
 #'
 #' # Can pass in zip file as a url
-#' x <- "http://ecat-dev.gbif.org/repository/vernaculars/vernacular_registry_dwca_3.zip"
-#' out <- dwca(x)
-#'
-#' # This one fails on file read
-#' out <- dwca("~/Downloads/0000153-150116162929234/", TRUE)
+#' url <-
+#'"https://github.com/ropensci/finch/blob/master/inst/examples/0000154-150116162929234.zip?raw=true"
+#' (out <- dwca(url))
 #' }
 
 dwca <- function(input, read=FALSE, ...){
