@@ -8,7 +8,7 @@ finch
 [![codecov.io](https://codecov.io/github/ropensci/finch/coverage.svg?branch=master)](https://codecov.io/github/ropensci/finch?branch=master)
 
 `finch` parses Darwin Core simple and archive files
- 
+
 ## Install
 
 First, get `EML` from GitHub since it's not on CRAN yet
@@ -31,9 +31,9 @@ devtools::install_github("ropensci/finch")
 library("finch")
 ```
 
-## Parse 
+## Parse
 
-To parse a simple darwin core file like 
+To parse a simple darwin core file like
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -123,37 +123,37 @@ List files in the archive
 ```r
 out$files
 #> $xml_files
-#> [1] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/meta.xml"    
-#> [2] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/metadata.xml"
+#> [1] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/meta.xml"    
+#> [2] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/metadata.xml"
 #> 
 #> $txt_files
-#> [1] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/citations.txt" 
-#> [2] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/multimedia.txt"
-#> [3] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/occurrence.txt"
-#> [4] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/rights.txt"    
-#> [5] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/verbatim.txt"  
+#> [1] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/citations.txt" 
+#> [2] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/multimedia.txt"
+#> [3] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/occurrence.txt"
+#> [4] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/rights.txt"    
+#> [5] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/verbatim.txt"  
 #> 
 #> $datasets_meta
-#>  [1] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/0214a6a7-898f-4ee8-b888-0be60ecde81f.xml"
-#>  [2] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/4bfac3ea-8763-4f4b-a71a-76a6f5f243d3.xml"
-#>  [3] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/4edd9396-59df-4b01-9e29-dc21a59f9963.xml"
-#>  [4] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/5df38344-b821-49c2-8174-cf0f29f4df0d.xml"
-#>  [5] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/7a25f7aa-03fb-4322-aaeb-66719e1a9527.xml"
-#>  [6] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/7c93d290-6c8b-11de-8226-b8a03c50a862.xml"
-#>  [7] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/851ab8c4-f762-11e1-a439-00145eb45e9a.xml"
-#>  [8] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/96ca66b4-f762-11e1-a439-00145eb45e9a.xml"
-#>  [9] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/cd875b5a-b3fe-48f2-94c7-371cab1431f3.xml"
-#> [10] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/dataset/d7ce3688-e91d-4f26-b2bb-333357c6da9f.xml"
+#>  [1] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/0214a6a7-898f-4ee8-b888-0be60ecde81f.xml"
+#>  [2] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/4bfac3ea-8763-4f4b-a71a-76a6f5f243d3.xml"
+#>  [3] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/4edd9396-59df-4b01-9e29-dc21a59f9963.xml"
+#>  [4] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/5df38344-b821-49c2-8174-cf0f29f4df0d.xml"
+#>  [5] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/7a25f7aa-03fb-4322-aaeb-66719e1a9527.xml"
+#>  [6] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/7c93d290-6c8b-11de-8226-b8a03c50a862.xml"
+#>  [7] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/851ab8c4-f762-11e1-a439-00145eb45e9a.xml"
+#>  [8] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/96ca66b4-f762-11e1-a439-00145eb45e9a.xml"
+#>  [9] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/cd875b5a-b3fe-48f2-94c7-371cab1431f3.xml"
+#> [10] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/dataset/d7ce3688-e91d-4f26-b2bb-333357c6da9f.xml"
 #> 
 #> $data_paths
 #> $data_paths$core
-#> [1] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/occurrence.txt"
+#> [1] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/occurrence.txt"
 #> 
 #> $data_paths$extension
-#> [1] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/multimedia.txt"
+#> [1] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/multimedia.txt"
 #> 
 #> $data_paths$extension
-#> [1] "/Users/sacmac/github/ropensci/finch/inst/examples/0000154-150116162929234/verbatim.txt"
+#> [1] "/Library/Frameworks/R.framework/Versions/3.2/Resources/library/finch/examples/0000154-150116162929234/verbatim.txt"
 ```
 
 High level metadata for the whole archive
@@ -375,12 +375,13 @@ head( out$data[[1]][,c(1:5)] )
 #> 6 477550692       NA                         NA                 NA
 ```
 
-You can also give `dwca()` a local directory, or url that contains a Darwin Core Archive. 
+You can also give `dwca()` a local directory, or url that contains a Darwin Core Archive.
 
 ## Meta
 
 * Please [report any issues or bugs](https://github.com/ropensci/finch/issues).
 * License: MIT
 * Get citation information for `finch` in R doing `citation(package = 'finch')`
+* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 [![rofooter](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
