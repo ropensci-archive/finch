@@ -4,7 +4,6 @@ sudo: required
 
 r_github_packages:
 - jimhester/covr
-- ropensci/EML
 
 after_success:
 - Rscript -e 'covr::codecov()'
