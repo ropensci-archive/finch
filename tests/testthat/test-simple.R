@@ -29,6 +29,6 @@ test_that("basic simple parsing works", {
 })
 
 test_that("passing in inaappropriate things fails correctly", {
-  expect_error(simple(5345), "invalid 'file' argument")
-  expect_error(simple("adfasdf"), "That file does not exist")
+  expect_error(simple_read(5345), "invalid 'file' argument")
+  expect_error(simple_read("adfasdf"), "That file does not exist")
 })
