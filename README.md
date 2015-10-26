@@ -9,6 +9,9 @@ finch
 
 `finch` parses Darwin Core simple and archive files
 
+* Darwin Core description at Biodiversity Information Standards site [http://rs.tdwg.org/dwc/](http://rs.tdwg.org/dwc/)
+* Darwin Core at Wikipedia [https://en.wikipedia.org/wiki/Darwin_Core](https://en.wikipedia.org/wiki/Darwin_Core)
+
 ## Install
 
 First, get `EML` from GitHub since it's not on CRAN yet

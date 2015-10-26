@@ -2,15 +2,16 @@
 #'
 #' @export
 #'
-#' @param input Path to local zip file, directory, or a url.
-#' @param read (logical)
+#' @param input (character) Path to local zip file, directory, or a url.
+#' @param read (logical) Whether or not to read in data files. If \code{FALSE}, we
+#' give back paths to files only. Default: \code{FALSE}
 #' @param ... Further args passed on to \code{\link[data.table]{fread}}
 #' @details
 #' Note that sometimes file reads fail. We use \code{\link[data.table]{fread}}
 #' internally, which is very fast, but can fail sometimes. If so, try reading in the
 #' data manually.
 #' @examples \dontrun{
-#' dir <- "~/Downloads/0009933-141123120432318/"
+#' dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 #'
 #' # Don't read data in
 #' x <- dwca(dir, read=FALSE)
@@ -61,18 +62,18 @@ dwca <- function(input, read=FALSE, ...){
   # get data
   datout <- read_data(files$data_paths, read)
 
-  structure(list(files=files,
+  structure(list(files = files,
                  highmeta = highmeta,
                  emlmeta = emlmeta,
                  dataset_meta = dataset_meta,
-                 data = datout), class="dwca_gbif", read=read)
+                 data = datout), class = "dwca_gbif", read = read)
 }
 
 try_meta <- function(x) {
   tmp <- xmlParse(grep("meta.xml", x, value = TRUE))
   childs <- xmlChildren(xmlChildren(tmp)$archive)
   out <- list()
-  for(i in seq_along(childs)){
+  for (i in seq_along(childs)) {
     res <- xmlChildren(childs[[i]])
     loc <- xmlValue(res$files)
     dat <- unname(lapply(res[ names(res) == "field" ], function(x) data.frame(as.list(xmlAttrs(x)))))
@@ -90,13 +91,6 @@ get_eml <- function(x){
 }
 
 try_eml <- function(x) EML::eml_read(get_eml(x))
-# {
-#   y <- sapply(x, is_eml)
-#   if( any(y) )
-#     EML::eml_read(x[y])
-#   else
-#     NULL
-# }
 
 #' @export
 print.dwca_gbif <- function(x, ...){
@@ -104,19 +98,21 @@ print.dwca_gbif <- function(x, ...){
   cat(paste0("  Package ID: ", cmeta(x)), sep = "\n")
   cat(paste0("  No. data sources: ", length(x$dataset_meta)), sep = "\n")
   cat(paste0("  No. datasets: ", length(x$data)), sep = "\n")
-  for(i in seq_along(x$data)){
-    if(attr(x, "read"))
+  for (i in seq_along(x$data)) {
+    if (attr(x, "read")) {
       cat(sprintf("  Dataset %s: [%s X %s]", names(x$data[i]), NCOL(x$data[[i]]), NROW(x$data[[i]])), sep = "\n")
-    else
+    } else {
       cat(sprintf("  Dataset %s: %s", names(x$data[i]), x$data[[i]]), sep = "\n")
+    }
   }
 }
 
-cmeta <- function(y){
-  if( !is.null(y$emlmeta) )
+cmeta <- function(y) {
+  if ( !is.null(y$emlmeta) ) {
     y$emlmeta@packageId
-  else
+  } else {
     NULL
+  }
 }
 
 parse_dwca <- function(x){
@@ -135,9 +131,9 @@ data_paths <- function(x){
 }
 
 read_data <- function(x, read){
-  if( read ){
+  if ( read ) {
     datout <- list()
-    for(i in seq_along(x)){
+    for (i in seq_along(x)) {
       datout[[basename(x[[i]])]] <- try_read(x[[i]])
     }
     datout
@@ -152,10 +148,11 @@ try_read <- function(z){
       data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE)
     ), error = function(e) e
   )
-  if( is(res, "simpleError") )
+  if ( is(res, "simpleError") ) {
     data.frame(NULL, stringsAsFactors = FALSE)
-  else
+  } else {
     res
+  }
 }
 
 process <- function(x){

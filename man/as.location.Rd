@@ -24,7 +24,7 @@ as.location(x, ...)
 Convert a path or URL to a location object.
 }
 \examples{
-\donttest{
+\dontrun{
 # A zip file
 file <- "~/Downloads/0000154-150116162929234.zip"
 as.location(file)

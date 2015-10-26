@@ -4,9 +4,9 @@
 \name{finch-package}
 \alias{finch}
 \alias{finch-package}
-\title{Parse and create Darwin Core Archive files}
+\title{Parse Darwin Core Archive files}
 \description{
-Parse and create Darwin Core Archive files
+Parse Darwin Core Archive files
 }
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}

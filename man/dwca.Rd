@@ -7,9 +7,10 @@
 dwca(input, read = FALSE, ...)
 }
 \arguments{
-\item{input}{Path to local zip file, directory, or a url.}
+\item{input}{(character) Path to local zip file, directory, or a url.}
 
-\item{read}{(logical)}
+\item{read}{(logical) Whether or not to read in data files. If \code{FALSE}, we
+give back paths to files only. Default: \code{FALSE}}
 
 \item{...}{Further args passed on to \code{\link[data.table]{fread}}}
 }
@@ -23,7 +24,7 @@ data manually.
 }
 \examples{
 \dontrun{
-dir <- "~/Downloads/0009933-141123120432318/"
+dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 
 # Don't read data in
 x <- dwca(dir, read=FALSE)
