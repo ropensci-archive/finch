@@ -5,9 +5,10 @@
 #' @importFrom methods is
 #' @importFrom XML xmlParse xmlChildren xmlValue xmlAttrs xmlToList xpathSApply
 #' xmlName xmlNamespaces xmlSchemaValidate
-#' @importFrom EML eml_read
+#' @importFrom EML read_eml
 #' @importFrom data.table fread
 #' @importFrom plyr rbind.fill
+#' @import readr
 #' @name finch-package
 #' @aliases finch
 #' @docType package

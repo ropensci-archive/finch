@@ -11,16 +11,18 @@ License: MIT + file LICENSE
 LazyData: true
 URL: https://github.com/ropensci/finch
 BugReports: https://github.com/ropensci/finch/issues
-Additional_repositories: http://packages.ropensci.org
+Additional_repositories: http://packages.ropensci.org/
 Imports:
     methods,
     utils,
     stats,
     XML,
-    EML,
+    EML (>= 0.1.0.0),
     data.table,
-    plyr
+    plyr,
+    readr
 Suggests:
     testthat,
     httr,
     jsonlite
+RoxygenNote: 5.0.1

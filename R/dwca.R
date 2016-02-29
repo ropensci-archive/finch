@@ -51,7 +51,7 @@ dwca_read <- function(input, read=FALSE, ...){
   # high level metadata - eml.xml or other named eml file
   emlmeta <- try_eml(files$xml_files)
   # get datasets metadata
-  dataset_meta <- lapply(files$datasets_meta, EML::eml_read)
+  dataset_meta <- lapply(files$datasets_meta, EML::read_eml)
   # get data
   datout <- read_data(files$data_paths, read)
 
@@ -87,7 +87,7 @@ get_eml <- function(x){
 
 # try to read in EML metadata
 try_eml <- function(w) {
-  EML::eml_read(get_eml(w))
+  EML::read_eml(get_eml(w))
 }
 
 #' @export
@@ -144,6 +144,7 @@ try_read <- function(z){
   res <- tryCatch(
     suppressWarnings(
       data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE)
+      # readr::read_csv(z)
     ), error = function(e) e
   )
   if ( is(res, "simpleError") ) {
