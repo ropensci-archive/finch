@@ -8,7 +8,6 @@
 #' @importFrom EML read_eml
 #' @importFrom data.table fread
 #' @importFrom plyr rbind.fill
-#' @import readr
 #' @name finch-package
 #' @aliases finch
 #' @docType package

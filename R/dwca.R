@@ -143,8 +143,7 @@ read_data <- function(x, read){
 try_read <- function(z){
   res <- tryCatch(
     suppressWarnings(
-      data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE)
-      # readr::read_csv(z)
+      data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE, sep = "\t", quote = "")
     ), error = function(e) e
   )
   if ( is(res, "simpleError") ) {

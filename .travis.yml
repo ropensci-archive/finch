@@ -5,10 +5,11 @@ sudo: required
 r_packages:
 - httr
 - jsonlite
+- covr
 
 r_github_packages:
-- jimhester/covr
 - ropensci/EML
+- Rdatatable/data.table
 
 after_success:
 - Rscript -e 'covr::codecov()'

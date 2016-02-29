@@ -4,7 +4,7 @@ Description: Parse and create 'Darwin' Core (http://rs.tdwg.org/dwc/) Simple and
     Archive files. Functionality includes reading and parsing all the files in a
     'Darwin' Core Archive, including the datasets and metadata; read and parse
     simple 'Darwin' Core files; and validation of 'Darwin' Core files.
-Version: 0.0.8.9000
+Version: 0.0.8.9500
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com")
 License: MIT + file LICENSE
@@ -18,9 +18,8 @@ Imports:
     stats,
     XML,
     EML (>= 0.1.0.0),
-    data.table,
-    plyr,
-    readr
+    data.table (>= 1.9.7),
+    plyr
 Suggests:
     testthat,
     httr,
