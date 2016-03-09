@@ -8,8 +8,7 @@ install:
   ps: Bootstrap
 
 environment:
-  global:
-    MKDIR_SRC: true
+  MKDIR_SRC: true
 
 build_script:
   - travis-tool.sh install_deps
