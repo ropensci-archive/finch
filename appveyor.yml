@@ -8,9 +8,10 @@ install:
   ps: Bootstrap
 
 build_script:
-  - travis-tool.sh r_install httr jsonlite
-  - travis-tool.sh install_github ropensci/EML Rdatatable/data.table
   - travis-tool.sh install_deps
+  - travis-tool.sh r_install httr jsonlite
+  - travis-tool.sh install_github ropensci/EML
+  - Rscript -e 'install.packages("data.table", repos = "https://Rdatatable.github.io/data.table", type = "source")'
 
 test_script:
   - travis-tool.sh run_tests
