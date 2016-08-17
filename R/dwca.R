@@ -3,13 +3,16 @@
 #' @export
 #'
 #' @param input (character) Path to local zip file, directory, or a url.
+#' If a URL it must be for a zip file.
 #' @param read (logical) Whether or not to read in data files. If \code{FALSE}, we
 #' give back paths to files only. Default: \code{FALSE}
 #' @param ... Further args passed on to \code{\link[data.table]{fread}}
+#'
 #' @details
 #' Note that sometimes file reads fail. We use \code{\link[data.table]{fread}}
 #' internally, which is very fast, but can fail sometimes. If so, try reading in the
 #' data manually.
+#'
 #' @examples \dontrun{
 #' dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 #'
@@ -38,9 +41,13 @@
 #' url <-
 #'"https://github.com/ropensci/finch/blob/master/inst/examples/0000154-150116162929234.zip?raw=true"
 #' (out <- dwca_read(url))
+#'
+#' # another url
+#' url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
+#' (out <- dwca_read(url))
 #' }
 
-dwca_read <- function(input, read=FALSE, ...){
+dwca_read <- function(input, read = FALSE, ...){
   # check file type
   x <- as.location(input)
   x <- process(x)
@@ -154,19 +161,21 @@ try_read <- function(z){
 }
 
 process <- function(x){
-  switch(attr(x, "type"),
-         dir = x,
-         file = {
-           dirpath <- sub("\\.zip", "", x[[1]])
-           unzip(x, exdir = dirpath)
-           dirpath
-         },
-         url = {
-           writepath <- file.path(Sys.getenv("HOME"), basename(x))
-           download.file(url = x, destfile = writepath)
-           dirpath <- sub("\\.zip", "", writepath)
-           unzip(writepath, exdir = dirpath)
-           dirpath
-         }
+  switch(
+    attr(x, "type"),
+    dir = x,
+    file = {
+      dirpath <- sub("\\.zip", "", x[[1]])
+      unzip(x, exdir = dirpath)
+      dirpath
+    },
+    url = {
+      ff <- basename(tempfile(fileext = ".zip"))
+      writepath <- file.path(Sys.getenv("HOME"), ff)
+      download.file(url = x, destfile = writepath)
+      dirpath <- sub("\\.zip", "", writepath)
+      unzip(writepath, exdir = dirpath)
+      dirpath
+    }
   )
 }

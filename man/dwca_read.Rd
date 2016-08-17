@@ -7,7 +7,8 @@
 dwca_read(input, read = FALSE, ...)
 }
 \arguments{
-\item{input}{(character) Path to local zip file, directory, or a url.}
+\item{input}{(character) Path to local zip file, directory, or a url.
+If a URL it must be for a zip file.}
 
 \item{read}{(logical) Whether or not to read in data files. If \code{FALSE}, we
 give back paths to files only. Default: \code{FALSE}}
@@ -50,6 +51,10 @@ out$dataset_meta
 # Can pass in zip file as a url
 url <-
 "https://github.com/ropensci/finch/blob/master/inst/examples/0000154-150116162929234.zip?raw=true"
+(out <- dwca_read(url))
+
+# another url
+url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
 (out <- dwca_read(url))
 }
 }
