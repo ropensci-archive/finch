@@ -15,13 +15,13 @@ simple_read <- function(file){
   xml <- xmlParse(file)
   dc <- xpathSApply(xml, "//dc:*")
   dc <- lapply(dc, function(x){
-    as.list(setNames(xmlValue(x), xmlName(x)))
+    as.list(stats::setNames(xmlValue(x), xmlName(x)))
   })
   dwc <- xpathSApply(xml, "//dwc:*")
   dwc <- lapply(dwc, function(x){
-    as.list(setNames(xmlValue(x), xmlName(x)))
+    as.list(stats::setNames(xmlValue(x), xmlName(x)))
   })
-  meta <- sapply(xmlNamespaces(xml), function(x) unname(as.list(setNames(x$uri, x$id))))
+  meta <- sapply(xmlNamespaces(xml), function(x) unname(as.list(stats::setNames(x$uri, x$id))))
   structure(list(meta = meta, dc = dc, dwc = dwc), class = "dwc_simple")
 }
 

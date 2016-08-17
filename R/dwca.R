@@ -153,7 +153,7 @@ try_read <- function(z){
       data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE, sep = "\t", quote = "")
     ), error = function(e) e
   )
-  if ( is(res, "simpleError") ) {
+  if ( inherits(res, "simpleError") ) {
     data.frame(NULL, stringsAsFactors = FALSE)
   } else {
     res

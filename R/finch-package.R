@@ -1,8 +1,6 @@
 #' Parse Darwin Core Archive files
 #'
 #' @importFrom utils unzip download.file browseURL
-#' @importFrom stats setNames
-#' @importFrom methods is
 #' @importFrom XML xmlParse xmlChildren xmlValue xmlAttrs xmlToList xpathSApply
 #' xmlName xmlNamespaces xmlSchemaValidate
 #' @importFrom EML read_eml
