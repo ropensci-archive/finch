@@ -189,7 +189,7 @@ dwca_cache_get <- function(url) {
   } else {
     on.exit(unlink(fpath))
     dir.create(finch_cache(), showWarnings = FALSE, recursive = TRUE)
-    download.file(url = url, destfile = fpath, quiet = TRUE)
+    download.file(url = url, destfile = fpath, quiet = FALSE)
     unzip(fpath, exdir = dirpath)
     return(dirpath)
   }
