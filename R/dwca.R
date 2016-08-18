@@ -13,6 +13,11 @@
 #' internally, which is very fast, but can fail sometimes. If so, try reading in the
 #' data manually.
 #'
+#' When you pass in a URL, we use \pkg{rappdirs} to determine cache path, and
+#' if you pass the same URL again, and your cache is not cleared, we'll
+#' pull from the cache. Passing a file or directory on your local system
+#' won't invoke the caching route, but will go directly to the file/directory.
+#'
 #' @examples \dontrun{
 #' dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 #'
@@ -169,13 +174,23 @@ process <- function(x){
       unzip(x, exdir = dirpath)
       dirpath
     },
-    url = {
-      ff <- basename(tempfile(fileext = ".zip"))
-      writepath <- file.path(Sys.getenv("HOME"), ff)
-      download.file(url = x, destfile = writepath)
-      dirpath <- sub("\\.zip", "", writepath)
-      unzip(writepath, exdir = dirpath)
-      dirpath
-    }
+    url = dwca_cache_get(x)
   )
+}
+
+dwca_cache_get <- function(url) {
+  sha <- digest::digest(url, algo = "sha1")
+  key <- paste0(sha, ".zip")
+  fpath <- file.path(finch_cache(), key)
+  dirpath <- sub("\\.zip", "", fpath)
+  if (file.exists(dirpath)) {
+    message("File in cache")
+    return(dirpath)
+  } else {
+    on.exit(unlink(fpath))
+    dir.create(finch_cache(), showWarnings = FALSE, recursive = TRUE)
+    download.file(url = url, destfile = fpath, quiet = TRUE)
+    unzip(fpath, exdir = dirpath)
+    return(dirpath)
+  }
 }

@@ -1,0 +1,66 @@
+context("dwca_get")
+
+test_that("dwca_get - works with a directory - read=FALSE", {
+  dir <- system.file("examples", "0000154-150116162929234", package = "finch")
+
+  aa <- dwca_read(dir, read = FALSE)
+
+  expect_named(aa, c('files','highmeta','emlmeta','dataset_meta','data'))
+  expect_is(aa, "dwca_gbif")
+  expect_type(aa, "list")
+  expect_is(aa$files, 'list')
+  expect_is(aa$highmeta, 'list')
+  expect_is(aa$highmeta$occurrence.txt, 'data.frame')
+  expect_is(aa$emlmeta, 'eml')
+  expect_is(aa$data, 'list')
+})
+
+test_that("dwca_get - works with a zip file - read=FALSE", {
+  zip <- system.file("examples", "0000154-150116162929234.zip", package = "finch")
+
+  aa <- dwca_read(zip, read = FALSE)
+
+  expect_named(aa, c('files','highmeta','emlmeta','dataset_meta','data'))
+  expect_is(aa, "dwca_gbif")
+  expect_type(aa, "list")
+  expect_is(aa$files, 'list')
+  expect_is(aa$highmeta, 'list')
+  expect_is(aa$highmeta$occurrence.txt, 'data.frame')
+  expect_is(aa$emlmeta, 'eml')
+  expect_is(aa$data, 'list')
+})
+
+test_that("dwca_get - works with a url - read=FALSE", {
+  url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
+
+  aa <- dwca_read(url, read = FALSE)
+
+  expect_named(aa, c('files','highmeta','emlmeta','dataset_meta','data'))
+  expect_is(aa, "dwca_gbif")
+  expect_type(aa, "list")
+  expect_is(aa$files, 'list')
+  expect_is(aa$highmeta, 'list')
+  expect_is(aa$highmeta$taxon.txt, 'data.frame')
+  expect_is(aa$emlmeta, 'eml')
+  expect_is(aa$data, 'list')
+  expect_named(aa$data, c('core', 'extension'))
+
+  # delete cache
+  dwca_cache_delete_all()
+})
+
+test_that("dwca_get - works with a url - read=TRUE", {
+  url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
+
+  aa <- dwca_read(url, read = TRUE)
+
+  expect_named(aa, c('files','highmeta','emlmeta','dataset_meta','data'))
+  expect_is(aa, "dwca_gbif")
+  expect_type(aa, "list")
+  expect_is(aa$data, 'list')
+  expect_is(aa$data$taxon.txt, 'data.frame')
+  expect_is(aa$data$distribution.txt, 'data.frame')
+
+  # delete cache
+  dwca_cache_delete_all()
+})

@@ -22,6 +22,11 @@ Parse Darwin Core Archive
 Note that sometimes file reads fail. We use \code{\link[data.table]{fread}}
 internally, which is very fast, but can fail sometimes. If so, try reading in the
 data manually.
+
+When you pass in a URL, we use \pkg{rappdirs} to determine cache path, and
+if you pass the same URL again, and your cache is not cleared, we'll
+pull from the cache. Passing a file or directory on your local system
+won't invoke the caching route, but will go directly to the file/directory.
 }
 \examples{
 \dontrun{
