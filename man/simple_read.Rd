@@ -2,24 +2,51 @@
 % Please edit documentation in R/simple.R
 \name{simple_read}
 \alias{simple_read}
-\title{Parse a simple darwin core file}
+\title{Parse a DarwinRecordSet and SimpleDarwinRecordSet files}
 \usage{
 simple_read(file)
 }
 \arguments{
-\item{file}{(character) A path to a single simple Darwin Core file in XML format}
+\item{file}{(character) A path to a single simple Darwin Core
+file in XML format. Required.}
+}
+\value{
+a S3 class \code{dwc_recordset} when a DarwinRecordSet is given, or
+a \code{dwc_simplerecordset} when a SimpleDarwinRecordSet is given. In each case
+the object is really just a list, with lightweight S3 class attached for easy
+downstream usage. Prints summary to screen by default
 }
 \description{
-Parse a simple darwin core file
+Parse a DarwinRecordSet and SimpleDarwinRecordSet files
+}
+\details{
+Make sure when reading a DarwinRecordSet to access the chunks by
+position rather than name since duplicate names are allowed in chunks.
 }
 \examples{
 \dontrun{
+# SimpleDarwinRecordSet examples
 file <- system.file("examples", "example_simple.xml", package = "finch")
 simple_read(file)
 file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
 simple_read(file)
-file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
+
+# DarwinRecordSet examples
+file <- system.file("examples", "example_classes_observation.xml", package = "finch")
 simple_read(file)
+
+file <- system.file("examples", "example_classes_specimen.xml", package = "finch")
+simple_read(file)
+
+# access elements of the object
+file <- system.file("examples", "example_classes_specimen.xml", package = "finch")
+res <- simple_read(file)
+## namespaces
+res$meta
+## locations
+res$locations
+## chunks, the first one
+res$chunks[[1]]
 }
 }
 

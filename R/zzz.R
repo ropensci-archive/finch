@@ -15,7 +15,3 @@ checkforpkg <- function(x) {
     invisible(TRUE)
   }
 }
-
-# validate_schema <- function(x){
-#   XML::xmlSchemaValidate(xml, )
-# }
