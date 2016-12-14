@@ -1,7 +1,31 @@
 finch
-=======
+=====
 
 ```{r echo=FALSE}
+hook_output <- knitr::knit_hooks$get("output")
+knitr::knit_hooks$set(output = function(x, options) {
+  lines <- options$output.lines
+  if (is.null(lines)) {
+    return(hook_output(x, options))  # pass to default hook
+  }
+  x <- unlist(strsplit(x, "\n"))
+  more <- "..."
+  if (length(lines) == 1) {        # first n lines
+    if (length(x) > lines) {
+      # truncate the output, but add ....
+      x <- c(head(x, lines), more)
+    }
+  } else {
+    x <- c(if (abs(lines[1])>1) more else NULL,
+           x[lines],
+           if (length(x)>lines[abs(length(lines))]) more else NULL
+    )
+  }
+  # paste these lines together
+  x <- paste(c(x, ""), collapse = "\n")
+  hook_output(x, options)
+})
+
 knitr::opts_chunk$set(
   warning = FALSE,
   message = FALSE,
@@ -22,12 +46,6 @@ In the future, we may make it easy to create Darwin Core archive files as well.
 * Darwin Core at Wikipedia [https://en.wikipedia.org/wiki/Darwin_Core](https://en.wikipedia.org/wiki/Darwin_Core)
 
 ## Install
-
-Stable version, from CRAN (not there yet, but soon..)
-
-```{r eval=FALSE}
-install.packages("finch")
-```
 
 Development version, from GitHub
 
@@ -93,7 +111,7 @@ out$dc
 
 ## Parse Darwin Core Archive
 
-To parse a Darwin Core Archive like can be gotten from GBIF use `dwca()`
+To parse a Darwin Core Archive like can be gotten from GBIF use `dwca_read()`
 
 There's an example Darwin Core Archive:
 
@@ -104,13 +122,13 @@ file <- system.file("examples", "0000154-150116162929234.zip", package = "finch"
 
 List files in the archive
 
-```{r}
+```{r output.lines=1:10}
 out$files
 ```
 
 High level metadata for the whole archive
 
-```{r}
+```{r output.lines=1:20}
 out$emlmeta
 ```
 
@@ -142,4 +160,4 @@ You can also give `dwca()` a local directory, or url that contains a Darwin Core
 * Get citation information for `finch` in R doing `citation(package = 'finch')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-[![rofooter](http://ropensci.org/public_images/github_footer.png)](http://ropensci.org)
+[![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
