@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema
+<xs:schema 
     version="2015-03-19"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://rs.tdwg.org/dwc/terms/"
@@ -9,16 +9,16 @@
     <xs:annotation>
         <xs:documentation xml:lang="en">
             The Generic Darwin Core schema defining all property terms as global elements.
-
-            Domain classes are not defined here, but in a separate schema (tdwg_dwcclasses.xsd) with the same namespace.
+            
+            Domain classes are not defined here, but in a separate schema (tdwg_dwcclasses.xsd) with the same namespace.            
             There are two ways in which references to domains can be defined:
             a) through an abstract base term anyXXXTerm, which is derived from the type dwc:anyPropery and which all properties
-               for that domain use as their substitution group. If you refer to dwc:anyXXXTerm in your schema, you will be able
-               to reference any of the terms, but it will be impossible to create a sequence of all terms occurring only once.
-            b) through a group of elements called XXXTerms, which reference properties exactly once as a sequence.
-               This group can be used to refer to all the domain properties only once. In order to make a property required, you
-               must create your own group referring to the individual dwc terms.
-               If you want to specify every term once at most and in any order, you will also have to refer to the individual dwc
+               for that domain use as their substitution group. If you refer to dwc:anyXXXTerm in your schema, you will be able 
+               to reference any of the terms, but it will be impossible to create a sequence of all terms occurring only once. 
+            b) through a group of elements called XXXTerms, which reference properties exactly once as a sequence. 
+               This group can be used to refer to all the domain properties only once. In order to make a property required, you 
+               must create your own group referring to the individual dwc terms. 
+               If you want to specify every term once at most and in any order, you will also have to refer to the individual dwc 
                term yourself - a limitation of the xs:all model.
         </xs:documentation>
     </xs:annotation>
@@ -53,7 +53,7 @@
     <!-- type="dwc:simpleProperty"  -->
     <!-- ANY DWC CLASS TERM -->
     <xs:element name="anyClass" abstract="true" substitutionGroup="dwc:any"/>
-    <!--
+    <!-- 
         All TERMS listed BY domain
         Every domain has its own substitutionGroup
     -->
