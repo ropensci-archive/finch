@@ -12,9 +12,9 @@ file in XML format. Required.}
 }
 \value{
 a S3 class \code{dwc_recordset} when a DarwinRecordSet is given, or
-a \code{dwc_simplerecordset} when a SimpleDarwinRecordSet is given. In each case
-the object is really just a list, with lightweight S3 class attached for easy
-downstream usage. Prints summary to screen by default
+a \code{dwc_simplerecordset} when a SimpleDarwinRecordSet is given. In
+each case the object is really just a list, with lightweight S3 class
+attached for easy downstream usage. Prints summary to screen by default
 }
 \description{
 Parse a DarwinRecordSet and SimpleDarwinRecordSet files
@@ -28,18 +28,22 @@ position rather than name since duplicate names are allowed in chunks.
 # SimpleDarwinRecordSet examples
 file <- system.file("examples", "example_simple.xml", package = "finch")
 simple_read(file)
-file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
+file <- system.file("examples", "example_simple_fossil.xml",
+  package = "finch")
 simple_read(file)
 
 # DarwinRecordSet examples
-file <- system.file("examples", "example_classes_observation.xml", package = "finch")
+file <- system.file("examples", "example_classes_observation.xml",
+  package = "finch")
 simple_read(file)
 
-file <- system.file("examples", "example_classes_specimen.xml", package = "finch")
+file <- system.file("examples", "example_classes_specimen.xml",
+  package = "finch")
 simple_read(file)
 
 # access elements of the object
-file <- system.file("examples", "example_classes_specimen.xml", package = "finch")
+file <- system.file("examples", "example_classes_specimen.xml",
+  package = "finch")
 res <- simple_read(file)
 ## namespaces
 res$meta

@@ -25,21 +25,24 @@ dwca_cache_details(files = NULL)
 Manage cached files
 }
 \details{
-\code{cache_delete} only accepts 1 file name, while \code{cache_delete_all}
-doesn't accept any names, but deletes all files. For deleting many specific files,
-use \code{cache_delete} in a \code{\link{lapply}} type call
+\code{cache_delete} only accepts 1 file name, while
+\code{cache_delete_all} doesn't accept any names, but deletes all files.
+For deleting many specific files, use \code{cache_delete} in a
+\code{\link{lapply}} type call
 
-We cache using \code{\link[rappdirs]{user_cache_dir}}, find your cache
-folder by executing \code{rappdirs::user_cache_dir("finch-cache")}
+We cache using \code{\link[rappdirs]{user_cache_dir}}, find your
+cache folder by executing \code{rappdirs::user_cache_dir("finch-cache")}
 }
 \section{Functions}{
 
 \itemize{
- \item \code{dwca_cache_list()} returns a character vector of full path file names
+ \item \code{dwca_cache_list()} returns a character vector of full path
+ file names
  \item \code{dwca_cache_delete()} deletes one or more files, returns nothing
  \item \code{dwca_cache_delete_all()} delete all files, returns nothing
- \item \code{dwca_cache_details()} prints file name and file size for each file,
- supply with one or more files, or no files (and get details for all available)
+ \item \code{dwca_cache_details()} prints file name and file size for
+ each file, supply with one or more files, or no files (and get details
+ for all available)
 }
 }
 \examples{

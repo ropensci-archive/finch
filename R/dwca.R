@@ -4,14 +4,14 @@
 #'
 #' @param input (character) Path to local zip file, directory, or a url.
 #' If a URL it must be for a zip file.
-#' @param read (logical) Whether or not to read in data files. If \code{FALSE}, we
-#' give back paths to files only. Default: \code{FALSE}
+#' @param read (logical) Whether or not to read in data files. If \code{FALSE},
+#' we give back paths to files only. Default: \code{FALSE}
 #' @param ... Further args passed on to \code{\link[data.table]{fread}}
 #'
 #' @details
 #' Note that sometimes file reads fail. We use \code{\link[data.table]{fread}}
-#' internally, which is very fast, but can fail sometimes. If so, try reading in the
-#' data manually.
+#' internally, which is very fast, but can fail sometimes. If so, try reading
+#' in the data manually.
 #'
 #' When you pass in a URL, we use \pkg{rappdirs} to determine cache path, and
 #' if you pass the same URL again, and your cache is not cleared, we'll
@@ -81,7 +81,8 @@ try_meta <- function(x) {
   for (i in seq_along(childs)) {
     res <- xmlChildren(childs[[i]])
     loc <- xmlValue(res$files)
-    dat <- unname(lapply(res[ names(res) == "field" ], function(x) data.frame(as.list(xmlAttrs(x)))))
+    dat <- unname(lapply(res[ names(res) == "field" ], function(x)
+      data.frame(as.list(xmlAttrs(x)))))
     out[[loc]] <- do.call("rbind.fill", dat)
   }
   out
@@ -110,9 +111,11 @@ print.dwca_gbif <- function(x, ...){
   cat(paste0("  No. datasets: ", length(x$data)), sep = "\n")
   for (i in seq_along(x$data)) {
     if (attr(x, "read")) {
-      cat(sprintf("  Dataset %s: [%s X %s]", names(x$data[i]), NCOL(x$data[[i]]), NROW(x$data[[i]])), sep = "\n")
+      cat(sprintf("  Dataset %s: [%s X %s]", names(x$data[i]),
+                  NCOL(x$data[[i]]), NROW(x$data[[i]])), sep = "\n")
     } else {
-      cat(sprintf("  Dataset %s: %s", names(x$data[i]), x$data[[i]]), sep = "\n")
+      cat(sprintf("  Dataset %s: %s", names(x$data[i]), x$data[[i]]),
+          sep = "\n")
     }
   }
 }
@@ -129,7 +132,8 @@ parse_dwca <- function(x){
   ff <- list.files(x, full.names = TRUE)
   list(xml_files = grep("\\.xml", ff, value = TRUE),
        txt_files = grep("\\.txt", ff, value = TRUE),
-       datasets_meta = list.files(grep("dataset", ff, value = TRUE), full.names = TRUE),
+       datasets_meta = list.files(grep("dataset", ff, value = TRUE),
+                                  full.names = TRUE),
        data_paths = data_paths(ff))
 }
 
@@ -155,7 +159,8 @@ read_data <- function(x, read){
 try_read <- function(z){
   res <- tryCatch(
     suppressWarnings(
-      data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE, sep = "\t", quote = "")
+      data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE,
+                        sep = "\t", quote = "")
     ), error = function(e) e
   )
   if ( inherits(res, "simpleError") ) {

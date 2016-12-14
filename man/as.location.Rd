@@ -5,7 +5,7 @@
 \alias{as.location.character}
 \alias{as.location.location}
 \alias{print.location}
-\title{Convert a path or URL to a location object.}
+\title{Convert a path or URL to a location object}
 \usage{
 as.location(x, ...)
 
@@ -16,26 +16,27 @@ as.location(x, ...)
 \method{print}{location}(x, ...)
 }
 \arguments{
-\item{x}{Input.}
+\item{x}{Input, a path or URL}
 
 \item{...}{Ignored.}
 }
 \description{
-Convert a path or URL to a location object.
+Convert a path or URL to a location object
 }
 \examples{
 \dontrun{
 # A zip file
-file <- "~/Downloads/0000154-150116162929234.zip"
+file <- system.file("examples/0000154-150116162929234.zip",
+  package = "finch")
 as.location(file)
 
 # A directory
-dir <- "~/Downloads/0000154-150116162929234/"
+dir <- system.file("examples/0000154-150116162929234",
+  package = "finch")
 as.location(dir)
 
 # A URL
-url <- "http://ecat-dev.gbif.org/repository/vernaculars/vernacular_registry_dwca_3.zip"
-as.location(url)
+as.location("https://httpbin.org/get")
 }
 }
 

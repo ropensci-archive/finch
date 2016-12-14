@@ -15,12 +15,14 @@ Validate a Darwin Core Archive file using the DCA schema
 \examples{
 \dontrun{
 file <- system.file("examples", "example_simple.xml", package = "finch")
-file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
-file <- system.file("examples", "example_classes_observation.xml", package = "finch")
-schema_validate(file)
+file <- system.file("examples", "example_simple_fossil.xml",
+  package = "finch")
+file <- system.file("examples", "example_classes_observation.xml",
+  package = "finch")
+# schema_validate(file)
 
 x <- system.file("examples", "example_bad1.xml", package = "finch")
-schema_validate(x)
+# schema_validate(x)
 }
 }
 \keyword{internal}

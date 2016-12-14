@@ -5,9 +5,9 @@
 #' file in XML format. Required.
 #'
 #' @return a S3 class \code{dwc_recordset} when a DarwinRecordSet is given, or
-#' a \code{dwc_simplerecordset} when a SimpleDarwinRecordSet is given. In each case
-#' the object is really just a list, with lightweight S3 class attached for easy
-#' downstream usage. Prints summary to screen by default
+#' a \code{dwc_simplerecordset} when a SimpleDarwinRecordSet is given. In
+#' each case the object is really just a list, with lightweight S3 class
+#' attached for easy downstream usage. Prints summary to screen by default
 #'
 #' @details Make sure when reading a DarwinRecordSet to access the chunks by
 #' position rather than name since duplicate names are allowed in chunks.
@@ -16,18 +16,22 @@
 #' # SimpleDarwinRecordSet examples
 #' file <- system.file("examples", "example_simple.xml", package = "finch")
 #' simple_read(file)
-#' file <- system.file("examples", "example_simple_fossil.xml", package = "finch")
+#' file <- system.file("examples", "example_simple_fossil.xml",
+#'   package = "finch")
 #' simple_read(file)
 #'
 #' # DarwinRecordSet examples
-#' file <- system.file("examples", "example_classes_observation.xml", package = "finch")
+#' file <- system.file("examples", "example_classes_observation.xml",
+#'   package = "finch")
 #' simple_read(file)
 #'
-#' file <- system.file("examples", "example_classes_specimen.xml", package = "finch")
+#' file <- system.file("examples", "example_classes_specimen.xml",
+#'   package = "finch")
 #' simple_read(file)
 #'
 #' # access elements of the object
-#' file <- system.file("examples", "example_classes_specimen.xml", package = "finch")
+#' file <- system.file("examples", "example_classes_specimen.xml",
+#'   package = "finch")
 #' res <- simple_read(file)
 #' ## namespaces
 #' res$meta
@@ -101,11 +105,13 @@ print.dwc_recordset <- function(x, ...){
   }
   cat("  locations >", sep = "\n")
   for (i in seq_along(x$locations)) {
-    cat(sprintf("    %s: %s", names(x$locations[[i]]), x$locations[[i]][[1]]), sep = "\n")
+    cat(sprintf("    %s: %s", names(x$locations[[i]]), x$locations[[i]][[1]]),
+        sep = "\n")
   }
   cat("  chunks >", sep = "\n")
   for (i in seq_along(x$chunks)) {
     cat(sprintf("    %s >", names(x$chunks)[i]), sep = "\n")
-    cat(sprintf("      %s: %s", names(x$chunks[[i]]), x$chunks[[i]][[1]]), sep = "\n")
+    cat(sprintf("      %s: %s", names(x$chunks[[i]]), x$chunks[[i]][[1]]),
+        sep = "\n")
   }
 }

@@ -10,8 +10,8 @@ dwca_read(input, read = FALSE, ...)
 \item{input}{(character) Path to local zip file, directory, or a url.
 If a URL it must be for a zip file.}
 
-\item{read}{(logical) Whether or not to read in data files. If \code{FALSE}, we
-give back paths to files only. Default: \code{FALSE}}
+\item{read}{(logical) Whether or not to read in data files. If \code{FALSE},
+we give back paths to files only. Default: \code{FALSE}}
 
 \item{...}{Further args passed on to \code{\link[data.table]{fread}}}
 }
@@ -20,8 +20,8 @@ Parse Darwin Core Archive
 }
 \details{
 Note that sometimes file reads fail. We use \code{\link[data.table]{fread}}
-internally, which is very fast, but can fail sometimes. If so, try reading in the
-data manually.
+internally, which is very fast, but can fail sometimes. If so, try reading
+in the data manually.
 
 When you pass in a URL, we use \pkg{rappdirs} to determine cache path, and
 if you pass the same URL again, and your cache is not cleared, we'll
