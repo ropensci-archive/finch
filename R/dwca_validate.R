@@ -29,7 +29,7 @@ dwca_validate <- function(x, ifModifiedSince = NULL, browse = FALSE, ...) {
   httr::stop_for_status(res)
   tmp <- httr::content(res, "text")
   dat <- jsonlite::fromJSON(tmp)
-  if (browse) browseURL(dat$report) else dat
+  if (browse) utils::browseURL(dat$report) else dat
 }
 
 gbif_val <- function() "http://tools.gbif.org/dwca-validator/validatews.do"

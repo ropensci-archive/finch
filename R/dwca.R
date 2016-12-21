@@ -176,7 +176,7 @@ process <- function(x){
     dir = x,
     file = {
       dirpath <- sub("\\.zip", "", x[[1]])
-      unzip(x, exdir = dirpath)
+      utils::unzip(x, exdir = dirpath)
       dirpath
     },
     url = dwca_cache_get(x)
@@ -194,8 +194,8 @@ dwca_cache_get <- function(url) {
   } else {
     on.exit(unlink(fpath))
     dir.create(finch_cache(), showWarnings = FALSE, recursive = TRUE)
-    download.file(url = url, destfile = fpath, quiet = FALSE)
-    unzip(fpath, exdir = dirpath)
+    utils::download.file(url = url, destfile = fpath, quiet = FALSE)
+    utils::unzip(fpath, exdir = dirpath)
     return(dirpath)
   }
 }
