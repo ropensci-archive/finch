@@ -1,21 +1,22 @@
 Package: finch
 Title: Parse 'Darwin' Core Files
-Description: Parse and create 'Darwin' Core (http://rs.tdwg.org/dwc/) Simple and
-    Archive files. Functionality includes reading and parsing all the files in a
-    'Darwin' Core Archive, including the datasets and metadata; read and parse
-    simple 'Darwin' Core files; and validation of 'Darwin' Core files.
-Version: 0.0.8.9700
+Description: Parse and create 'Darwin' Core (<http://rs.tdwg.org/dwc/>) Simple 
+    and Archive files. Functionality includes reading and parsing all the 
+    files in a 'Darwin' Core Archive, including the datasets and metadata; 
+    read and parse simple 'Darwin' Core files; and validation of 'Darwin' 
+    Core files.
+Version: 0.0.9.9100
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com")
 License: MIT + file LICENSE
 LazyData: true
 URL: https://github.com/ropensci/finch
 BugReports: https://github.com/ropensci/finch/issues
-Additional_repositories: http://packages.ropensci.org
 Imports:
-    xml2,
+    XML,
+    xml2 (>= 1.0.0),
     EML (>= 1.0.1),
-    data.table (>= 1.9.7),
+    data.table (>= 1.10.1),
     plyr,
     rappdirs,
     digest
