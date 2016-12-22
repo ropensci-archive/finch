@@ -13,7 +13,6 @@ LazyData: true
 URL: https://github.com/ropensci/finch
 BugReports: https://github.com/ropensci/finch/issues
 Imports:
-    XML,
     xml2 (>= 1.0.0),
     EML (>= 1.0.1),
     data.table (>= 1.10.1),

@@ -12,7 +12,7 @@ test_that("dwca_get - works with a directory - read=FALSE", {
   expect_is(aa$highmeta, 'list')
   expect_is(aa$highmeta$occurrence.txt, 'data.frame')
   expect_is(aa$emlmeta, 'eml')
-  expect_is(aa$data, 'list')
+  expect_is(aa$data, 'character')
 })
 
 test_that("dwca_get - works with a zip file - read=FALSE", {
@@ -27,7 +27,7 @@ test_that("dwca_get - works with a zip file - read=FALSE", {
   expect_is(aa$highmeta, 'list')
   expect_is(aa$highmeta$occurrence.txt, 'data.frame')
   expect_is(aa$emlmeta, 'eml')
-  expect_is(aa$data, 'list')
+  expect_is(aa$data, 'character')
 })
 
 test_that("dwca_get - works with a url - read=FALSE", {

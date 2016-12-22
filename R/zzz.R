@@ -15,3 +15,7 @@ checkforpkg <- function(x) {
     invisible(TRUE)
   }
 }
+
+dt <- function(x) {
+  (data.table::setDF(data.table::rbindlist(x, use.names = TRUE, fill = TRUE)))
+}

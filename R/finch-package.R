@@ -1,10 +1,8 @@
 #' Parse Darwin Core Archive files
 #'
-#' @importFrom XML xmlParse xmlChildren xmlValue xmlAttrs xmlToList xpathSApply
-#' xmlName xmlNamespaces xmlSchemaValidate
+#' @import EML
 #' @importFrom xml2 read_xml xml_name xml_text xml_ns xml_children
-#' xml_root xml_find_all
-#' @importFrom EML read_eml
+#' xml_root xml_find_all xml_attr xml_attrs xml_find_first xml_ns_strip
 #' @importFrom data.table fread
 #' @importFrom plyr rbind.fill
 #' @name finch-package

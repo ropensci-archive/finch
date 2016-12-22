@@ -22,21 +22,20 @@
 #' dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 #'
 #' # Don't read data in
-#' x <- dwca_read(dir, read=FALSE)
-#' x
+#' (x <- dwca_read(dir, read=FALSE))
 #' x$files
 #' x$highmeta
 #' x$dataset_meta[[1]]
 #' x$data
 #'
 #' # Read data
-#' x <- dwca_read(dir, read=TRUE)
-#' x
-#' head( x$data[[1]] )
+#' (x <- dwca_read(dir, read=TRUE))
+#' head(x$data[[1]])
 #'
 #' # Can pass in a zip file
-#' zip <- system.file("examples", "0000154-150116162929234.zip", package = "finch")
-#' out <- dwca_read(zip)
+#' zip <- system.file("examples", "0000154-150116162929234.zip",
+#'   package = "finch")
+#' (out <- dwca_read(zip))
 #' out$files
 #' out$highmeta
 #' out$emlmeta
@@ -75,33 +74,60 @@ dwca_read <- function(input, read = FALSE, ...){
 }
 
 try_meta <- function(x) {
-  tmp <- xmlParse(grep("meta.xml", x, value = TRUE))
-  childs <- xmlChildren(xmlChildren(tmp)$archive)
-  out <- list()
-  for (i in seq_along(childs)) {
-    res <- xmlChildren(childs[[i]])
-    loc <- xmlValue(res$files)
-    dat <- unname(lapply(res[ names(res) == "field" ], function(x)
-      data.frame(as.list(xmlAttrs(x)))))
-    out[[loc]] <- do.call("rbind.fill", dat)
+  tmp <- read_xml(grep("meta.xml", x, value = TRUE))
+  xml_ns_strip(tmp)
+
+  core <- xml_find_first(tmp, "//archive/core")
+  if (inherits(core, "xml_missing")) {
+    occ_file <- "core"
+    occ_df <- list()
+  } else {
+    occ_file <- xml_text(xml_find_first(core, "files/location"))
+    occ_df <- dt(lapply(xml_find_all(core, "field"), function(z) {
+      as.list(xml_attrs(z))
+    }))
   }
-  out
+
+  multi <- xml_find_first(tmp, "//extension[contains(@rowType, \"Multimedia\")]")
+  if (inherits(multi, "xml_missing")) {
+    multi_file <- "multimedia"
+    multi_df <- list()
+  } else {
+    multi_file <- xml_text(xml_find_first(multi, "files/location"))
+    multi_df <- dt(lapply(xml_find_all(multi, "field"), function(z) {
+      as.list(xml_attrs(z))
+    }))
+  }
+
+  verb <- xml_find_first(tmp, "//extension[contains(@rowType, \"Occurrence\")]")
+  if (inherits(verb, "xml_missing")) {
+    verb_file <- "occurrence"
+    verb_df <- list()
+  } else {
+    verb_file <- xml_text(xml_find_first(verb, "files/location"))
+    verb_df <- dt(lapply(xml_find_all(verb, "field"), function(z) {
+      as.list(xml_attrs(z))
+    }))
+  }
+
+  Filter(function(z) length(z) != 0, stats::setNames(
+    list(occ_df, multi_df, verb_df),
+    c(occ_file, multi_file, verb_file)
+  ))
 }
 
 # test if file contents is EML
 is_eml <- function(x) any( grepl("eml:eml", readLines(x, n = 5)) )
 
 # gives back file path
-get_eml <- function(x){
-  tmp <- xmlParse(grep("meta.xml", x, value = TRUE))
-  ff <- xmlToList(xmlChildren(tmp)$archive)$.attrs[["metadata"]]
+get_eml <- function(x) {
+  tmp <- read_xml(grep("meta.xml", x, value = TRUE))
+  ff <- xml_attr(tmp, "metadata")
   grep(ff, x, value = TRUE)
 }
 
 # try to read in EML metadata
-try_eml <- function(w) {
-  EML::read_eml(get_eml(w))
-}
+try_eml <- function(w) EML::read_eml(get_eml(w))
 
 #' @export
 print.dwca_gbif <- function(x, ...){
@@ -114,8 +140,8 @@ print.dwca_gbif <- function(x, ...){
       cat(sprintf("  Dataset %s: [%s X %s]", names(x$data[i]),
                   NCOL(x$data[[i]]), NROW(x$data[[i]])), sep = "\n")
     } else {
-      cat(sprintf("  Dataset %s: %s", names(x$data[i]), x$data[[i]]),
-          sep = "\n")
+      z <- sprintf("  Dataset %s: %s", names(x$data[i]), x$data[[i]])
+      if (length(z) > 0) cat(z, sep = "\n")
     }
   }
 }
@@ -139,9 +165,9 @@ parse_dwca <- function(x){
 
 data_paths <- function(x){
   basedir <- dirname(grep("meta.xml", x, value = TRUE))
-  meta <- xmlParse(grep("meta.xml", x, value = TRUE))
-  children <- xmlChildren(xmlChildren(meta)$archive)
-  lapply(children, function(x) file.path(basedir, xmlToList(x)$files$location))
+  meta <- read_xml(grep("meta.xml", x, value = TRUE))
+  xml_ns_strip(meta)
+  file.path(basedir, xml_text(xml_find_all(meta, "//files/location")))
 }
 
 read_data <- function(x, read){

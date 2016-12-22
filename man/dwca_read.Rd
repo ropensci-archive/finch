@@ -33,21 +33,20 @@ won't invoke the caching route, but will go directly to the file/directory.
 dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 
 # Don't read data in
-x <- dwca_read(dir, read=FALSE)
-x
+(x <- dwca_read(dir, read=FALSE))
 x$files
 x$highmeta
 x$dataset_meta[[1]]
 x$data
 
 # Read data
-x <- dwca_read(dir, read=TRUE)
-x
-head( x$data[[1]] )
+(x <- dwca_read(dir, read=TRUE))
+head(x$data[[1]])
 
 # Can pass in a zip file
-zip <- system.file("examples", "0000154-150116162929234.zip", package = "finch")
-out <- dwca_read(zip)
+zip <- system.file("examples", "0000154-150116162929234.zip",
+  package = "finch")
+(out <- dwca_read(zip))
 out$files
 out$highmeta
 out$emlmeta
