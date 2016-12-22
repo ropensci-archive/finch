@@ -31,6 +31,7 @@ test_that("dwca_get - works with a zip file - read=FALSE", {
 })
 
 test_that("dwca_get - works with a url - read=FALSE", {
+  skip_on_cran()
   if (!ping_internet()) skip("No internet connection")
 
   url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
@@ -52,6 +53,7 @@ test_that("dwca_get - works with a url - read=FALSE", {
 })
 
 test_that("dwca_get - works with a url - read=TRUE", {
+  skip_on_cran()
   if (!ping_internet()) skip("No internet connection")
 
   url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
