@@ -47,6 +47,12 @@ In the future, we may make it easy to create Darwin Core archive files as well.
 
 ## Install
 
+Stable version
+
+```{r eval=FALSE}
+install.packages("finch")
+```
+
 Development version, from GitHub
 
 ```{r eval=FALSE}

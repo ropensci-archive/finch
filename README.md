@@ -16,6 +16,13 @@ In the future, we may make it easy to create Darwin Core archive files as well.
 
 ## Install
 
+Stable version
+
+
+```r
+install.packages("finch")
+```
+
 Development version, from GitHub
 
 
