@@ -1,10 +1,10 @@
 Package: finch
-Title: Parse 'Darwin' Core Files
-Description: Parse and create 'Darwin' Core (<http://rs.tdwg.org/dwc/>) Simple 
-    and Archive files. Functionality includes reading and parsing all the 
-    files in a 'Darwin' Core Archive, including the 'datasets' and 'metadata'; 
-    read and parse simple 'Darwin' Core files; and validation of 'Darwin' 
-    Core files.
+Title: Parse Darwin Core Files
+Description: Parse and create Darwin Core (<http://rs.tdwg.org/dwc/>) Simple 
+    and Archives. Functionality includes reading and parsing all the 
+    files in a Darwin Core Archive, including the datasets and metadata; 
+    read and parse simple Darwin Core files; and validation of Darwin 
+    Core Archives.
 Version: 0.1.0
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com")
