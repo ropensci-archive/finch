@@ -12,7 +12,7 @@
 #' @details Make sure when reading a DarwinRecordSet to access the chunks by
 #' position rather than name since duplicate names are allowed in chunks.
 #'
-#' @examples \dontrun{
+#' @examples
 #' # SimpleDarwinRecordSet examples
 #' file <- system.file("examples", "example_simple.xml", package = "finch")
 #' simple_read(file)
@@ -39,7 +39,6 @@
 #' res$locations
 #' ## chunks, the first one
 #' res$chunks[[1]]
-#' }
 simple_read <- function(file) {
   if (!file.exists(file)) stop("file does not exist", call. = FALSE)
   xml <- read_xml(file)

@@ -24,7 +24,6 @@ as.location(x, ...)
 Convert a path or URL to a location object
 }
 \examples{
-\dontrun{
 # A zip file
 file <- system.file("examples/0000154-150116162929234.zip",
   package = "finch")
@@ -37,6 +36,5 @@ as.location(dir)
 
 # A URL
 as.location("https://httpbin.org/get")
-}
 }
 

@@ -29,7 +29,6 @@ pull from the cache. Passing a file or directory on your local system
 won't invoke the caching route, but will go directly to the file/directory.
 }
 \examples{
-\dontrun{
 dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 
 # Don't read data in
@@ -39,6 +38,7 @@ x$highmeta
 x$dataset_meta[[1]]
 x$data
 
+\dontrun{
 # Read data
 (x <- dwca_read(dir, read=TRUE))
 head(x$data[[1]])

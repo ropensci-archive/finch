@@ -19,9 +19,8 @@ This is a new release, so there are no reverse dependencies.
 This is a new release. I have read and agree to the the CRAN policies at
 https://cran.r-project.org/web/packages/policies.html
 
-This is a re-submission of this version, removing some 
-quotes from words in the Title and Description fields of the 
-DESCRIPTION file.
+This is a re-submission of this version, removing \dontrun{}
+from examples where possible.
 
 Thanks!
 Scott Chamberlain

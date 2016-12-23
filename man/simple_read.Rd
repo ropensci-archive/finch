@@ -24,7 +24,6 @@ Make sure when reading a DarwinRecordSet to access the chunks by
 position rather than name since duplicate names are allowed in chunks.
 }
 \examples{
-\dontrun{
 # SimpleDarwinRecordSet examples
 file <- system.file("examples", "example_simple.xml", package = "finch")
 simple_read(file)
@@ -51,6 +50,5 @@ res$meta
 res$locations
 ## chunks, the first one
 res$chunks[[1]]
-}
 }
 

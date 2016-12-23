@@ -4,7 +4,7 @@
 #'
 #' @param x Input, a path or URL
 #' @param ... Ignored.
-#' @examples \dontrun{
+#' @examples
 #' # A zip file
 #' file <- system.file("examples/0000154-150116162929234.zip",
 #'   package = "finch")
@@ -17,8 +17,6 @@
 #'
 #' # A URL
 #' as.location("https://httpbin.org/get")
-#' }
-
 as.location <- function(x, ...) UseMethod("as.location")
 
 #' @export
