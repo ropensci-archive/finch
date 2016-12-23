@@ -6,6 +6,7 @@ finch
 [![Build Status](https://api.travis-ci.org/ropensci/finch.png)](https://travis-ci.org/ropensci/finch)
 [![Build status](https://ci.appveyor.com/api/projects/status/rsjg02cbwfbujxn0?svg=true)](https://ci.appveyor.com/project/sckott/finch)
 [![codecov.io](https://codecov.io/github/ropensci/finch/coverage.svg?branch=master)](https://codecov.io/github/ropensci/finch?branch=master)
+[![cran version](http://www.r-pkg.org/badges/version/finch)](https://cran.r-project.org/package=finch)
 
 `finch` parses Darwin Core simple and archive files
 
@@ -90,13 +91,13 @@ out$dc
 #> [[1]]
 #> [[1]]$type
 #> [1] "PhysicalObject"
-#> 
-#> 
+#>
+#>
 #> [[2]]
 #> [[2]]$modified
 #> [1] "2009-02-12T12:43:31"
-#> 
-#> 
+#>
+#>
 #> [[3]]
 #> [[3]]$language
 #> [1] "en"
@@ -127,15 +128,15 @@ List files in the archive
 ```r
 out$files
 #> $xml_files
-#> [1] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/meta.xml"    
+#> [1] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/meta.xml"
 #> [2] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/metadata.xml"
-#> 
+#>
 #> $txt_files
-#> [1] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/citations.txt" 
+#> [1] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/citations.txt"
 #> [2] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/multimedia.txt"
 #> [3] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/occurrence.txt"
-#> [4] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/rights.txt"    
-#> [5] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/verbatim.txt"  
+#> [4] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/rights.txt"
+#> [5] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/verbatim.txt"
 ...
 ```
 
