@@ -6,3 +6,5 @@ appveyor.yml
 ^CONDUCT\.md$
 trim_raw_gbif.R
 ^cran-comments\.md$
+.github
+
