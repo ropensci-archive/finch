@@ -37,4 +37,3 @@ as.location(dir)
 # A URL
 as.location("https://httpbin.org/get")
 }
-

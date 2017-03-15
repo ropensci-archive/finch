@@ -24,4 +24,4 @@ Suggests:
     httr,
     jsonlite,
     covr
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

@@ -51,4 +51,3 @@ res$locations
 ## chunks, the first one
 res$chunks[[1]]
 }
-

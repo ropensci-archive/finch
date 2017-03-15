@@ -62,4 +62,3 @@ url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
 (out <- dwca_read(url))
 }
 }
-

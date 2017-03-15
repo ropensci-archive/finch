@@ -2,8 +2,8 @@
 % Please edit documentation in R/finch-package.R
 \docType{package}
 \name{finch-package}
-\alias{finch}
 \alias{finch-package}
+\alias{finch}
 \title{Parse Darwin Core Archive files}
 \description{
 Parse Darwin Core Archive files
@@ -12,4 +12,3 @@ Parse Darwin Core Archive files
 Scott Chamberlain \email{myrmecocystus@gmail.com}
 }
 \keyword{package}
-

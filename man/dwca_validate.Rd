@@ -34,4 +34,3 @@ x <- "http://rs.gbif.org/datasets/german_sl.zip"
 dwca_validate(x)
 }
 }
-

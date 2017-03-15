@@ -2,10 +2,10 @@
 % Please edit documentation in R/cache.R
 \name{dwca_cache}
 \alias{dwca_cache}
+\alias{dwca_cache_list}
 \alias{dwca_cache_delete}
 \alias{dwca_cache_delete_all}
 \alias{dwca_cache_details}
-\alias{dwca_cache_list}
 \title{Manage cached files}
 \usage{
 dwca_cache_list()
@@ -45,6 +45,7 @@ cache folder by executing \code{rappdirs::user_cache_dir("finch-cache")}
  for all available)
 }
 }
+
 \examples{
 \dontrun{
 # list files in cache
@@ -64,4 +65,3 @@ dwca_cache_details()
 # dwca_cache_delete_all()
 }
 }
-
