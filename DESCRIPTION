@@ -20,6 +20,7 @@ Imports:
     rappdirs,
     digest
 Suggests:
+    roxygen2 (>= 6.0.1),
     testthat,
     httr,
     jsonlite,
