@@ -18,7 +18,7 @@ test_that("dwca_get - works with a directory - read=FALSE", {
 test_that("dwca_get - works with a zip file - read=FALSE", {
   zip <- system.file("examples", "0000154-150116162929234.zip", package = "finch")
 
-  aa <- dwca_read(zip, read = FALSE)
+  aa <- suppressMessages(dwca_read(zip, read = FALSE))
 
   expect_named(aa, c('files','highmeta','emlmeta','dataset_meta','data'))
   expect_is(aa, "dwca_gbif")
@@ -36,7 +36,7 @@ test_that("dwca_get - works with a url - read=FALSE", {
 
   url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
 
-  aa <- dwca_read(url, read = FALSE)
+  aa <- suppressMessages(dwca_read(url, read = FALSE))
 
   expect_named(aa, c('files','highmeta','emlmeta','dataset_meta','data'))
   expect_is(aa, "dwca_gbif")
@@ -45,8 +45,8 @@ test_that("dwca_get - works with a url - read=FALSE", {
   expect_is(aa$highmeta, 'list')
   expect_is(aa$highmeta$taxon.txt, 'data.frame')
   expect_is(aa$emlmeta, 'eml')
-  expect_is(aa$data, 'list')
-  expect_named(aa$data, c('core', 'extension'))
+  expect_is(aa$data, 'character')
+  expect_null(names(aa$data))
 
   # delete cache
   dwca_cache_delete_all()
