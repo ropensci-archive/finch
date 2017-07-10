@@ -65,7 +65,7 @@ dwca_read <- function(input, read = FALSE, ...){
   # get datasets metadata
   dataset_meta <- lapply(files$datasets_meta, EML::read_eml)
   # get data
-  datout <- read_data(files$data_paths, read)
+  datout <- read_data(files$data_paths, read, ...)
 
   structure(list(files = files,
                  highmeta = highmeta,
@@ -171,11 +171,11 @@ data_paths <- function(x){
   file.path(basedir, xml_text(xml_find_all(meta, "//files/location")))
 }
 
-read_data <- function(x, read){
+read_data <- function(x, read, ...){
   if ( read ) {
     datout <- list()
     for (i in seq_along(x)) {
-      datout[[basename(x[[i]])]] <- try_read(x[[i]])
+      datout[[basename(x[[i]])]] <- try_read(x[[i]], ...)
     }
     datout
   } else {
@@ -183,11 +183,11 @@ read_data <- function(x, read){
   }
 }
 
-try_read <- function(z){
+try_read <- function(z, ...){
   res <- tryCatch(
     suppressWarnings(
       data.table::fread(z, stringsAsFactors = FALSE, data.table = FALSE,
-                        sep = "\t", quote = "")
+                        sep = "\t", quote = "", ...)
     ), error = function(e) e
   )
   if ( inherits(res, "simpleError") ) {
