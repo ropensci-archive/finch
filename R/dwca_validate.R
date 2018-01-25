@@ -12,7 +12,7 @@
 #' to generate the archive on the fly this might not be recognised. Optional.
 #' @param browse (logical) Browse to generated report or not.
 #' Default: `FALSE`
-#' @param ... Curl options passed to [httr::GET()]
+#' @param ... Curl options passed to [crul::HttpClient]
 #' @details Uses the GBIF DCA validator (http://tools.gbif.org/dwca-validator/)
 #'
 #' @examples \dontrun{
@@ -20,16 +20,20 @@
 #' dwca_validate(x)
 #' }
 dwca_validate <- function(x, ifModifiedSince = NULL, browse = FALSE, ...) {
-  checkforpkg("httr")
+  checkforpkg("crul")
   checkforpkg("jsonlite")
   if (!is.character(x)) stop(x, " must be character class", call. = FALSE)
   if (!is.url(x)) stop(x, " does not appear to be a URL", call. = FALSE)
   args <- fcmp(list(archiveUrl = x, ifModifiedSince = ifModifiedSince))
-  res <- httr::GET(gbif_val(), query = args)
-  httr::stop_for_status(res)
-  tmp <- httr::content(res, "text")
+  cli <- crul::HttpClient$new(url = gbif_val(), opts = list(...))
+  res <- cli$get(query = args)
+  res$raise_for_status()
+  tmp <- res$parse("UTF-8")
+  # res <- httr::GET(gbif_val(), query = args)
+  # httr::stop_for_status(res)
+  # tmp <- httr::content(res, "text")
   dat <- jsonlite::fromJSON(tmp)
   if (browse) utils::browseURL(dat$report) else dat
 }
 
-gbif_val <- function() "http://tools.gbif.org/dwca-validator/validatews.do"
+gbif_val <- function() "https://tools.gbif.org/dwca-validator/validatews.do"

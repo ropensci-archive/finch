@@ -20,7 +20,7 @@ to generate the archive on the fly this might not be recognised. Optional.}
 \item{browse}{(logical) Browse to generated report or not.
 Default: \code{FALSE}}
 
-\item{...}{Curl options passed to \code{\link[httr:GET]{httr::GET()}}}
+\item{...}{Curl options passed to \link[crul:HttpClient]{crul::HttpClient}}
 }
 \description{
 Validate a Darwin Core Archive

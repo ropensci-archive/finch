@@ -22,7 +22,7 @@ Imports:
     digest
 Suggests:
     testthat,
-    httr,
+    crul,
     jsonlite
 RoxygenNote: 6.0.1
 X-schema.org-applicationCategory: Biology
