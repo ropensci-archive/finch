@@ -1,5 +1,9 @@
 context("dwca_get")
 
+# set up a temporary directory for tests
+dwca_cache$cache_path_set(path = "finch", type = "tempdir")
+ 
+
 test_that("dwca_get - works with a directory - read=FALSE", {
   dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 
@@ -49,7 +53,7 @@ test_that("dwca_get - works with a url - read=FALSE", {
   expect_null(names(aa$data))
 
   # delete cache
-  dwca_cache_delete_all()
+  dwca_cache$delete_all()
 })
 
 test_that("dwca_get - works with a url - read=TRUE", {
@@ -58,7 +62,7 @@ test_that("dwca_get - works with a url - read=TRUE", {
 
   url <- "http://ipt.jbrj.gov.br/jbrj/archive.do?r=redlist_2013_taxons&v=3.12"
 
-  aa <- dwca_read(url, read = TRUE)
+  aa <- suppressMessages(dwca_read(url, read = TRUE))
 
   expect_named(aa, c('files','highmeta','emlmeta','dataset_meta','data'))
   expect_is(aa, "dwca_gbif")
@@ -68,5 +72,5 @@ test_that("dwca_get - works with a url - read=TRUE", {
   expect_is(aa$data$distribution.txt, 'data.frame')
 
   # delete cache
-  dwca_cache_delete_all()
+  dwca_cache$delete_all()
 })

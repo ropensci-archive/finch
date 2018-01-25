@@ -5,7 +5,7 @@ Description: Parse and create Darwin Core (<http://rs.tdwg.org/dwc/>) Simple
     files in a Darwin Core Archive, including the datasets and metadata;
     read and parse simple Darwin Core files; and validation of Darwin
     Core Archives.
-Version: 0.1.2.9110
+Version: 0.1.9.9110
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
     email = "myrmecocystus@gmail.com", comment = c(ORCID = "0000-0003-1444-9135"))
 License: MIT + file LICENSE
@@ -19,7 +19,8 @@ Imports:
     data.table (>= 1.10.0),
     plyr,
     rappdirs,
-    digest
+    digest,
+    hoardr (>= 0.2.0)
 Suggests:
     testthat,
     crul,

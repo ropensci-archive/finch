@@ -2,66 +2,49 @@
 % Please edit documentation in R/cache.R
 \name{dwca_cache}
 \alias{dwca_cache}
-\alias{dwca_cache_list}
-\alias{dwca_cache_delete}
-\alias{dwca_cache_delete_all}
-\alias{dwca_cache_details}
-\title{Manage cached files}
-\usage{
-dwca_cache_list()
-
-dwca_cache_delete(files, force = TRUE)
-
-dwca_cache_delete_all(force = TRUE)
-
-dwca_cache_details(files = NULL)
-}
-\arguments{
-\item{files}{(character) one or more complete file names}
-
-\item{force}{(logical) Should files be force deleted? Default: \code{TRUE}}
-}
+\title{Caching}
 \description{
-Manage cached files
+Manage cached \code{finch} files with package \pkg{hoardr}
 }
 \details{
-\code{cache_delete} only accepts 1 file name, while
-\code{cache_delete_all} doesn't accept any names, but deletes all files.
-For deleting many specific files, use \code{cache_delete} in a
-\link{lapply} type call
+The dafault cache directory is
+\code{paste0(rappdirs::user_cache_dir(), "/R/finch")}, but you can set
+your own path using \code{cache_path_set()}
 
-We cache using \link[rappdirs:user_cache_dir]{rappdirs::user_cache_dir}, find your
-cache folder by executing \code{rappdirs::user_cache_dir("finch-cache")}
+\code{cache_delete} only accepts one file name, while
+\code{cache_delete_all} doesn't accept any names, but deletes all files.
+For deleting many specific files, use \code{cache_delete} in a \code{\link[=lapply]{lapply()}}
+type call
 }
-\section{Functions}{
+\section{Useful user functions}{
 
 \itemize{
-\item \code{dwca_cache_list()} returns a character vector of full path
-file names
-\item \code{dwca_cache_delete()} deletes one or more files, returns nothing
-\item \code{dwca_cache_delete_all()} delete all files, returns nothing
-\item \code{dwca_cache_details()} prints file name and file size for
-each file, supply with one or more files, or no files (and get details
-for all available)
+\item \code{dwca_cache$cache_path_get()} get cache path
+\item \code{dwca_cache$cache_path_set()} set cache path
+\item \code{dwca_cache$list()} returns a character vector of full
+path file names
+\item \code{dwca_cache$files()} returns file objects with metadata
+\item \code{dwca_cache$details()} returns files with details
+\item \code{dwca_cache$delete()} delete specific files
+\item \code{dwca_cache$delete_all()} delete all files, returns nothing
 }
 }
 
 \examples{
 \dontrun{
+dwca_cache
+
 # list files in cache
-dwca_cache_list()
+dwca_cache$list()
 
-# List info for single files
-dwca_cache_details(files = dwca_cache_list()[1])
-dwca_cache_details(files = dwca_cache_list()[2])
-
-# List info for all files
-dwca_cache_details()
-
-# delete files by name in cache
-# dwca_cache_delete(files = dwca_cache_list()[1])
+# delete certain database files
+# dwca_cache$delete("file path")
+# dwca_cache$list()
 
 # delete all files in cache
-# dwca_cache_delete_all()
+# dwca_cache$delete_all()
+# dwca_cache$list()
+
+# set a different cache path from the default
 }
 }

@@ -91,13 +91,13 @@ out$dc
 #> [[1]]
 #> [[1]]$type
 #> [1] "PhysicalObject"
-#>
-#>
+#> 
+#> 
 #> [[2]]
 #> [[2]]$modified
 #> [1] "2009-02-12T12:43:31"
-#>
-#>
+#> 
+#> 
 #> [[3]]
 #> [[3]]$language
 #> [1] "en"
@@ -128,15 +128,15 @@ List files in the archive
 ```r
 out$files
 #> $xml_files
-#> [1] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/meta.xml"
-#> [2] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/metadata.xml"
-#>
+#> [1] "/Users/sckott/Library/Caches/R/finch/0000154-150116162929234/meta.xml"    
+#> [2] "/Users/sckott/Library/Caches/R/finch/0000154-150116162929234/metadata.xml"
+#> 
 #> $txt_files
-#> [1] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/citations.txt"
-#> [2] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/multimedia.txt"
-#> [3] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/occurrence.txt"
-#> [4] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/rights.txt"
-#> [5] "/Library/Frameworks/R.framework/Versions/3.3/Resources/library/finch/examples/0000154-150116162929234/verbatim.txt"
+#> [1] "/Users/sckott/Library/Caches/R/finch/0000154-150116162929234/citations.txt" 
+#> [2] "/Users/sckott/Library/Caches/R/finch/0000154-150116162929234/multimedia.txt"
+#> [3] "/Users/sckott/Library/Caches/R/finch/0000154-150116162929234/occurrence.txt"
+#> [4] "/Users/sckott/Library/Caches/R/finch/0000154-150116162929234/rights.txt"    
+#> [5] "/Users/sckott/Library/Caches/R/finch/0000154-150116162929234/verbatim.txt"  
 ...
 ```
 

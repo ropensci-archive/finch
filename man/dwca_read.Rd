@@ -29,6 +29,9 @@ pull from the cache. Passing a file or directory on your local system
 won't invoke the caching route, but will go directly to the file/directory.
 }
 \examples{
+# set up a temporary directory for the example
+dwca_cache$cache_path_set(path = "finch", type = "tempdir")
+
 dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 
 # Don't read data in

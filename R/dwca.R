@@ -19,6 +19,9 @@
 #' won't invoke the caching route, but will go directly to the file/directory.
 #'
 #' @examples
+#' # set up a temporary directory for the example
+#' dwca_cache$cache_path_set(path = "finch", type = "tempdir")
+#' 
 #' dir <- system.file("examples", "0000154-150116162929234", package = "finch")
 #'
 #' # Don't read data in
@@ -202,9 +205,16 @@ process <- function(x){
     attr(x, "type"),
     dir = x,
     file = {
-      dirpath <- sub("\\.zip", "", x[[1]])
-      utils::unzip(x, exdir = dirpath)
-      dirpath
+      dwca_cache$mkdir()
+      dirpath <- file.path(dwca_cache$cache_path_get(), 
+        basename(sub("\\.zip", "", x[[1]])))
+      if (file.exists(dirpath)) {
+        message("File in cache")
+        return(dirpath)
+      } else {
+        utils::unzip(x, exdir = dirpath)
+        return(dirpath)
+      }
     },
     url = dwca_cache_get(x)
   )
@@ -213,14 +223,14 @@ process <- function(x){
 dwca_cache_get <- function(url) {
   sha <- digest::digest(url, algo = "sha1")
   key <- paste0(sha, ".zip")
-  fpath <- file.path(finch_cache(), key)
+  fpath <- file.path(dwca_cache$cache_path_get(), key)
   dirpath <- sub("\\.zip", "", fpath)
   if (file.exists(dirpath)) {
     message("File in cache")
     return(dirpath)
   } else {
     on.exit(unlink(fpath))
-    dir.create(finch_cache(), showWarnings = FALSE, recursive = TRUE)
+    dwca_cache$mkdir()
     utils::download.file(url = url, destfile = fpath, quiet = FALSE, mode = "wb")
     utils::unzip(fpath, exdir = dirpath)
     return(dirpath)
