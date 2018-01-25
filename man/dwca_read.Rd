@@ -29,6 +29,7 @@ pull from the cache. Passing a file or directory on your local system
 won't invoke the caching route, but will go directly to the file/directory.
 }
 \examples{
+\dontrun{
 # set up a temporary directory for the example
 dwca_cache$cache_path_set(path = "finch", type = "tempdir")
 
@@ -41,7 +42,6 @@ x$highmeta
 x$dataset_meta[[1]]
 x$data
 
-\dontrun{
 # Read data
 (x <- dwca_read(dir, read=TRUE))
 head(x$data[[1]])
