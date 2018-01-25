@@ -3,8 +3,8 @@
 README.Rmd
 appveyor.yml
 .travis.yml
-^CONDUCT\.md$
+^CODE_OF_CONDUCT\.md$
 trim_raw_gbif.R
 ^cran-comments\.md$
 .github
-
+^LICENSE\.md$
