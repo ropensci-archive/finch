@@ -7,7 +7,7 @@ Description: Parse and create Darwin Core (<http://rs.tdwg.org/dwc/>) Simple
     Core Archives.
 Version: 0.1.0.9000
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
-    email = "myrmecocystus@gmail.com")
+    email = "myrmecocystus@gmail.com", comment = c(ORCID = "0000-0003-1444-9135"))
 License: MIT + file LICENSE
 LazyData: true
 URL: https://github.com/ropensci/finch
@@ -20,8 +20,10 @@ Imports:
     rappdirs,
     digest
 Suggests:
-    roxygen2 (>= 6.0.1),
     testthat,
     httr,
     jsonlite
 RoxygenNote: 6.0.1
+X-schema.org-applicationCategory: Biology
+X-schema.org-keywords: biology, occurrences, specimen, biodiversity, collections, species
+X-schema.org-isPartOf: https://ropensci.org
