@@ -4,8 +4,8 @@
 #' @param file (character) A path to a single simple Darwin Core
 #' file in XML format. Required.
 #'
-#' @return a S3 class \code{dwc_recordset} when a DarwinRecordSet is given, or
-#' a \code{dwc_simplerecordset} when a SimpleDarwinRecordSet is given. In
+#' @return a S3 class `dwc_recordset` when a DarwinRecordSet is given, or
+#' a `dwc_simplerecordset` when a SimpleDarwinRecordSet is given. In
 #' each case the object is really just a list, with lightweight S3 class
 #' attached for easy downstream usage. Prints summary to screen by default
 #'

@@ -13,13 +13,13 @@ If a URL it must be for a zip file.}
 \item{read}{(logical) Whether or not to read in data files. If \code{FALSE},
 we give back paths to files only. Default: \code{FALSE}}
 
-\item{...}{Further args passed on to \code{\link[data.table]{fread}}}
+\item{...}{Further args passed on to \code{\link[data.table:fread]{data.table::fread()}}}
 }
 \description{
 Parse Darwin Core Archive
 }
 \details{
-Note that sometimes file reads fail. We use \code{\link[data.table]{fread}}
+Note that sometimes file reads fail. We use \code{\link[data.table:fread]{data.table::fread()}}
 internally, which is very fast, but can fail sometimes. If so, try reading
 in the data manually.
 

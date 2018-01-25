@@ -11,8 +11,8 @@
 #' do this out of the box for static files, but if you use dynamic scripts
 #' to generate the archive on the fly this might not be recognised. Optional.
 #' @param browse (logical) Browse to generated report or not.
-#' Default: \code{FALSE}
-#' @param ... Curl options passed to \code{\link[httr]{GET}}
+#' Default: `FALSE`
+#' @param ... Curl options passed to [httr::GET()]
 #' @details Uses the GBIF DCA validator (http://tools.gbif.org/dwca-validator/)
 #'
 #' @examples \dontrun{

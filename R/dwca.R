@@ -4,12 +4,12 @@
 #'
 #' @param input (character) Path to local zip file, directory, or a url.
 #' If a URL it must be for a zip file.
-#' @param read (logical) Whether or not to read in data files. If \code{FALSE},
-#' we give back paths to files only. Default: \code{FALSE}
-#' @param ... Further args passed on to \code{\link[data.table]{fread}}
+#' @param read (logical) Whether or not to read in data files. If `FALSE`,
+#' we give back paths to files only. Default: `FALSE`
+#' @param ... Further args passed on to [data.table::fread()]
 #'
 #' @details
-#' Note that sometimes file reads fail. We use \code{\link[data.table]{fread}}
+#' Note that sometimes file reads fail. We use [data.table::fread()]
 #' internally, which is very fast, but can fail sometimes. If so, try reading
 #' in the data manually.
 #'

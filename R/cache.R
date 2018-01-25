@@ -3,26 +3,25 @@
 #' @export
 #' @name dwca_cache
 #' @param files (character) one or more complete file names
-#' @param force (logical) Should files be force deleted? Default: \code{TRUE}
+#' @param force (logical) Should files be force deleted? Default: `TRUE`
 #'
-#' @details \code{cache_delete} only accepts 1 file name, while
-#' \code{cache_delete_all} doesn't accept any names, but deletes all files.
-#' For deleting many specific files, use \code{cache_delete} in a
-#' \code{\link{lapply}} type call
+#' @details `cache_delete` only accepts 1 file name, while
+#' `cache_delete_all` doesn't accept any names, but deletes all files.
+#' For deleting many specific files, use `cache_delete` in a
+#' [lapply] type call
 #'
-#' @details We cache using \code{\link[rappdirs]{user_cache_dir}}, find your
-#' cache folder by executing \code{rappdirs::user_cache_dir("finch-cache")}
+#' @details We cache using [rappdirs::user_cache_dir], find your
+#' cache folder by executing `rappdirs::user_cache_dir("finch-cache")`
 #'
 #' @section Functions:
-#' \itemize{
-#'  \item \code{dwca_cache_list()} returns a character vector of full path
+#' 
+#' - `dwca_cache_list()` returns a character vector of full path
 #'  file names
-#'  \item \code{dwca_cache_delete()} deletes one or more files, returns nothing
-#'  \item \code{dwca_cache_delete_all()} delete all files, returns nothing
-#'  \item \code{dwca_cache_details()} prints file name and file size for
+#' - `dwca_cache_delete()` deletes one or more files, returns nothing
+#' - `dwca_cache_delete_all()` delete all files, returns nothing
+#' - `dwca_cache_details()` prints file name and file size for
 #'  each file, supply with one or more files, or no files (and get details
 #'  for all available)
-#' }
 #'
 #' @examples \dontrun{
 #' # list files in cache
