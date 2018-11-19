@@ -5,6 +5,7 @@ finch
 
 [![Build Status](https://api.travis-ci.org/ropensci/finch.png)](https://travis-ci.org/ropensci/finch)
 [![Build status](https://ci.appveyor.com/api/projects/status/rsjg02cbwfbujxn0?svg=true)](https://ci.appveyor.com/project/sckott/finch)
+[![cran checks](https://cranchecks.info/badges/worst/finch)](https://cranchecks.info/pkgs/finch)
 [![codecov.io](https://codecov.io/github/ropensci/finch/coverage.svg?branch=master)](https://codecov.io/github/ropensci/finch?branch=master)
 [![cran version](http://www.r-pkg.org/badges/version/finch)](https://cran.r-project.org/package=finch)
 
