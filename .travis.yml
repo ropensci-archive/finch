@@ -1,11 +1,16 @@
 language: r
-sudo: false
+sudo: required
 cache: packages
 
 r_check_args: "--as-cran --run-dontrun"
 
-r_gihtub_packages:
-  - jimhester/covr
+r_binary_packages:
+  - covr
+
+before_install:
+  - sudo add-apt-repository -y ppa:opencpu/jq
+  - sudo apt-get update
+  - sudo apt-get install libjq-dev
 
 after_success:
   - Rscript -e 'covr::codecov()'
