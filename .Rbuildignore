@@ -9,3 +9,4 @@ trim_raw_gbif.R
 .github
 ^LICENSE\.md$
 ^codemeta\.json$
+^revdep$

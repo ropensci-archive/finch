@@ -10,7 +10,7 @@ No problems found
 
 ## Reverse dependencies
 
-There are no reverse dependencies.
+There are 2 reverse dependencies - no problems were found.
 
 ---
 

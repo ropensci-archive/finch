@@ -3,4 +3,6 @@
 .RData
 .DS_Store
 trim_raw_gbif.R
-
+revdep/checks.noindex
+revdep/data.sqlite
+revdep/library.noindex
