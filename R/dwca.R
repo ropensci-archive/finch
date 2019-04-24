@@ -152,7 +152,7 @@ print.dwca_gbif <- function(x, ...){
 
 cmeta <- function(y) {
   if ( !is.null(y$emlmeta) ) {
-    y$emlmeta@packageId
+    y$emlmeta$packageId
   } else {
     NULL
   }
