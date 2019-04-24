@@ -1,7 +1,7 @@
 context("dwca_get")
 
 # set up a temporary directory for tests
-dwca_cache$cache_path_set(path = "finch", type = "tempdir")
+invisible(dwca_cache$cache_path_set(path = "finch", type = "tempdir"))
  
 
 test_that("dwca_get - works with a directory - read=FALSE", {
