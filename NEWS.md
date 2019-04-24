@@ -1,3 +1,11 @@
+finch 0.3.0
+===========
+
+### BUG FIXES
+
+* fix to unit tests and `dwc_read()` for a new version of `EML` package (v0.2) (#26) thanks @cboettig
+
+
 finch 0.2.0
 ===========
 
