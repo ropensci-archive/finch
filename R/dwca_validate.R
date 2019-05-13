@@ -29,9 +29,6 @@ dwca_validate <- function(x, ifModifiedSince = NULL, browse = FALSE, ...) {
   res <- cli$get(query = args)
   res$raise_for_status()
   tmp <- res$parse("UTF-8")
-  # res <- httr::GET(gbif_val(), query = args)
-  # httr::stop_for_status(res)
-  # tmp <- httr::content(res, "text")
   dat <- jsonlite::fromJSON(tmp)
   if (browse) utils::browseURL(dat$report) else dat
 }
