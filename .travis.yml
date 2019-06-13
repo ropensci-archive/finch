@@ -10,7 +10,7 @@ r_packages:
 addons:
   apt:
     sources:
-      - sourceline: 'ppa:jeroen/jq'
+      - sourceline: 'ppa:cran/jq'
     packages:
       - libjq-dev
       - libv8-dev
