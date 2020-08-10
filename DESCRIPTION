@@ -5,9 +5,10 @@ Description: Parse and create Darwin Core (<http://rs.tdwg.org/dwc/>) Simple
     files in a Darwin Core Archive, including the datasets and metadata;
     read and parse simple Darwin Core files; and validation of Darwin
     Core Archives.
-Version: 0.3.0.9100
+Version: 0.3.2.91
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
-    email = "myrmecocystus@gmail.com", comment = c(ORCID = "0000-0003-1444-9135"))
+    email = "myrmecocystus@gmail.com",
+    comment = c(ORCID = "0000-0003-1444-9135"))
 License: MIT + file LICENSE
 LazyData: true
 URL: https://docs.ropensci.org/finch, https://github.com/ropensci/finch
@@ -18,8 +19,6 @@ Imports:
     xml2 (>= 1.0.0),
     EML (>= 2.0.0),
     data.table (>= 1.10.0),
-    plyr,
-    rappdirs,
     digest,
     hoardr (>= 0.2.0)
 Suggests:
