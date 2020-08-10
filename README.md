@@ -6,15 +6,15 @@ finch
 [![Build Status](https://api.travis-ci.org/ropensci/finch.png)](https://travis-ci.org/ropensci/finch)
 [![Build status](https://ci.appveyor.com/api/projects/status/rsjg02cbwfbujxn0?svg=true)](https://ci.appveyor.com/project/sckott/finch)
 [![cran checks](https://cranchecks.info/badges/worst/finch)](https://cranchecks.info/pkgs/finch)
-[![codecov.io](https://codecov.io/github/ropensci/finch/coverage.svg?branch=master)](https://codecov.io/github/ropensci/finch?branch=master)
-[![cran version](http://www.r-pkg.org/badges/version/finch)](https://cran.r-project.org/package=finch)
+[![codecov](https://codecov.io/gh/ropensci/finch/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/finch)
+[![cran version](https://www.r-pkg.org/badges/version/finch)](https://cran.r-project.org/package=finch)
 
 `finch` parses Darwin Core simple and archive files
 
 In the future, we may make it easy to create Darwin Core archive files as well.
 
-* Darwin Core description at Biodiversity Information Standards site [http://rs.tdwg.org/dwc/](http://rs.tdwg.org/dwc/)
-* Darwin Core at Wikipedia [https://en.wikipedia.org/wiki/Darwin_Core](https://en.wikipedia.org/wiki/Darwin_Core)
+* Darwin Core description at Biodiversity Information Standards site <http://rs.tdwg.org/dwc.htm>
+* Darwin Core at Wikipedia <https://en.wikipedia.org/wiki/Darwin_Core>
 
 ## Install
 
@@ -29,7 +29,7 @@ Development version, from GitHub
 
 
 ```r
-devtools::install_github("ropensci/finch")
+remotes::install_github("ropensci/finch")
 ```
 
 
@@ -146,26 +146,26 @@ High level metadata for the whole archive
 
 ```r
 out$emlmeta
-#> <eml packageId="6cfaaf9c-d518-4ca3-8dc5-f5aadddc0390" system="http://gbif.org" scope="system" xml:lang="en" xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd">
-#>   <dataset>
-#>     <title>GBIF Occurrence Download 0000154-150116162929234</title>
-#>     <creator>
-#>       <individualName>
-#>         <surName>GBIF Download Service</surName>
-#>       </individualName>
-#>     </creator>
-#>     <metadataProvider>
-#>       <individualName>
-#>         <surName>GBIF Download Service</surName>
-#>       </individualName>
-#>     </metadataProvider>
-#>     <associatedParty>
-#>       <organizationName>OZCAM (Online Zoological Collections of Australian Museums) Provider</organizationName>
-#>       <onlineUrl>http://www.ozcam.org.au/</onlineUrl>
-#>       <role>CONTENT_PROVIDER</role>
-#>     </associatedParty>
-#>     <associatedParty>
-#>       <individualName>
+#> additionalMetadata:
+#>   metadata:
+#>     gbif:
+#>       citation:
+#>         identifier: 0000154-150116162929234
+#>         citation: GBIF Occurrence Download 0000154-150116162929234
+#>       physical:
+#>         objectName: []
+#>         characterEncoding: UTF-8
+#>         dataFormat:
+#>           externallyDefinedFormat:
+#>             formatName: Darwin Core Archive
+#>         distribution:
+#>           online:
+#>             url:
+#>               function: download
+#>               url: http://api.gbif.org/v1/occurrence/download/request/0000154-150116162929234.zip
+#> dataset:
+#>   title: GBIF Occurrence Download 0000154-150116162929234
+#>   creator:
 ...
 ```
 
@@ -212,6 +212,6 @@ You can also give `dwca()` a local directory, or url that contains a Darwin Core
 * Please [report any issues or bugs](https://github.com/ropensci/finch/issues).
 * License: MIT
 * Get citation information for `finch` in R doing `citation(package = 'finch')`
-* Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
 
 [![rofooter](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
