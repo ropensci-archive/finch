@@ -11,6 +11,8 @@ finch
 
 `finch` parses Darwin Core simple and archive files
 
+Docs: <https://docs.ropensci.org/finch/>
+
 * Darwin Core description at Biodiversity Information Standards site <http://rs.tdwg.org/dwc.htm>
 * Darwin Core at Wikipedia <https://en.wikipedia.org/wiki/Darwin_Core>
 
