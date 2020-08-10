@@ -3,15 +3,13 @@ finch
 
 
 
-[![Build Status](https://api.travis-ci.org/ropensci/finch.png)](https://travis-ci.org/ropensci/finch)
+[![Build Status](https://travis-ci.org/ropensci/finch.svg?branch=master)](https://travis-ci.org/ropensci/finch)
 [![Build status](https://ci.appveyor.com/api/projects/status/rsjg02cbwfbujxn0?svg=true)](https://ci.appveyor.com/project/sckott/finch)
 [![cran checks](https://cranchecks.info/badges/worst/finch)](https://cranchecks.info/pkgs/finch)
 [![codecov](https://codecov.io/gh/ropensci/finch/branch/master/graph/badge.svg)](https://codecov.io/gh/ropensci/finch)
 [![cran version](https://www.r-pkg.org/badges/version/finch)](https://cran.r-project.org/package=finch)
 
 `finch` parses Darwin Core simple and archive files
-
-In the future, we may make it easy to create Darwin Core archive files as well.
 
 * Darwin Core description at Biodiversity Information Standards site <http://rs.tdwg.org/dwc.htm>
 * Darwin Core at Wikipedia <https://en.wikipedia.org/wiki/Darwin_Core>
