@@ -26,7 +26,7 @@ Suggests:
     testthat,
     crul,
     jsonlite
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 X-schema.org-applicationCategory: Biology
 X-schema.org-keywords: biology, occurrences, specimen, biodiversity, collections, species
 X-schema.org-isPartOf: https://ropensci.org

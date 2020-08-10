@@ -1,3 +1,9 @@
+<!-- Please use a feature branch (i.e., put your work in a new branch that has a name that reflects the feature you are working on; https://docs.gitlab.com/ee/workflow/workflow.html) -->
+
+<!-- If authentication is involved: do not share your username/password, or api keys/tokens in this pull request - most likely the maintainer will have their own equivalent key -->
+
+<!-- If you've updated a file in the man-roxygen directory, make sure to update the man/ files by running devtools::document() or similar as .Rd files should be affected by your change -->
+
 <!--- Provide a general summary of your changes in the Title above -->
 
 ## Description
@@ -14,3 +20,4 @@ methods/functions, include an example if possible to do in brief form -->
 
 <!--- Did you remember to include tests? Unless you're just changing
 grammar, please include new tests for your change -->
+

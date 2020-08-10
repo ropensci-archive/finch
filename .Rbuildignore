@@ -10,3 +10,4 @@ trim_raw_gbif.R
 ^LICENSE\.md$
 ^codemeta\.json$
 ^revdep$
+Makefile

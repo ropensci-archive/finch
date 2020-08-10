@@ -1,4 +1,5 @@
-.Rproj.user
+^.*\.Rproj$
+^\.Rproj\.user$
 .Rhistory
 .RData
 .DS_Store
