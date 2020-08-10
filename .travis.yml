@@ -1,5 +1,5 @@
 language: r
-sudo: required
+os: linux
 cache: packages
 
 r_check_args: "--as-cran --run-dontrun"
@@ -22,5 +22,3 @@ notifications:
   email:
     on_success: never
     on_failure: never
-  slack:
-    secure: YO8T9bcDOws/skyUehUe3p6FmooNgXh6yHpq4x2Nm9ROoHRBGfTOp+Aq4zds13ISokvxQEDW37wae7BbcteFAdLrxqyNHPnM/AnhCviiDSE/fcwMoOOsYreZGGazVGbIxsbK/OLH1nTva6Qow6e44QlahokFpO4Qjd6obvvIHSo=
