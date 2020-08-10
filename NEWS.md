@@ -1,3 +1,11 @@
+finch 0.4.0
+===========
+
+### BUG FIXES
+
+* fix various package imports: `plyr` and `rappdirs` no longer needed; import `EML::read_eml` instead of the whole package; import `digest::digest` instead of whole package; import `hoardr::hoard` instead of whole package (#27)
+
+
 finch 0.3.0
 ===========
 

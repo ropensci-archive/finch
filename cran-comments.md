@@ -1,7 +1,7 @@
 ## Test environments
 
-* local OS X install, R 3.5.3 patched
-* ubuntu 14.04 (on travis-ci), R 3.5.3
+* local OS X install, R 4.0.2 patched
+* ubuntu 14.04 (on travis-ci), R 4.0.2
 * win-builder (devel and release)
 
 ## R CMD check results
@@ -14,7 +14,7 @@ There are 2 reverse dependencies - no problems were found.
 
 ---
 
-This version fixes a print method and a test for a new version on CRAN of an import package EML.
+This version fixes package import problems.
 
 Thanks!
 Scott Chamberlain
